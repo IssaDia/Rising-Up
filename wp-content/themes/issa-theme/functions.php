@@ -9,7 +9,12 @@ add_action('wp_enqueue_scripts', 'theme_enqueue_scripts');
 
 
 function theme_setup()
-{
+{   
+    add_theme_support( 'custom-logo', array(
+		'height'      => 40,
+		'width'       => 40,
+		'flex-height' => true,
+	) );
     add_theme_support('menus');
     register_nav_menu('primary', 'Primary Header Navigation');
 }

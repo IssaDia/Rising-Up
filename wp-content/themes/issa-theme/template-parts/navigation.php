@@ -24,9 +24,15 @@ $primaryNav = wp_get_nav_menu_items($menuID);
         </div>
     </div>
 </div>
-</div>
+
 <header class="showcase">
     <div class="container showcase-inner">
-        <h1>Rising Up</h1>
+        <?php if (has_custom_logo()) { ?>
+            <div class='logo'>
+                <?php the_custom_logo() ?>
+            </div>
+
+        <?php } ?>
+        <h1><?php bloginfo('name') ?></h1>
     </div>
 </header>
