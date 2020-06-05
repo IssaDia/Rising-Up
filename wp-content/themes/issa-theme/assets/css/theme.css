@@ -12,55 +12,52 @@
 }
 
 body {
+    font-family: 'Merriweather', serif !important;
+}
 
-    font-family: 'Norican', cursive !important;
+/* TITLE */
 
+.title {
+    margin-top: 150px;
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h2 {
+
+    font-size: 3em !important;
     text-align: center;
-    margin: 100px auto !important;
-    font-size: 2.5em !important;
-    max-width: 500px;
-    position: relative;
-}
-
-h2 span {
-    background: #ffffff;
-}
-
-h2:before{
-
-    display: block;
-    content: '';
-    width: 150px;
-    height: 4px;
     position: absolute;
-    background: #000000;
+    padding-bottom: 40px;
+
+}
+
+h2:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
     left: 0;
-    top: 50%;
-
-
-}
-
-h2:after{
-
-    display: block;
-    content: '';
-    width: 150px;
-    height: 4px;
-    position: absolute;
-    background: #000000;
     right: 0;
-    top: 50%;
-
+    width: 120px;
+    border-top: 5px solid black;
+    margin: auto;
 
 }
+
+h3 {
+    margin-bottom: 60px !important;
+    font-size:2.5em !important;
+}
+
+/* NAVBAR */
+
 
 .showcase {
     background: var(--primary-color);
     color: #fff;
-    height: 80vh;
+    height: 70vh;
     position: relative;
 }
 
@@ -73,7 +70,6 @@ h2:after{
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
     position: absolute;
     top: 0;
     left: 0;
@@ -269,12 +265,12 @@ h2:after{
 }
 
 .card-container a {
-    
+
     width: inherit;
     height: inherit;
     cursor: pointer;
 
-   
+
 }
 
 .card-container .card_image {
@@ -299,15 +295,11 @@ h2:after{
     color: #ffffff;
 }
 
-.card-image:hover {
+.card-container:hover {
     transform: scale(0.9, 0.9);
     box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
         -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
-    top: 100px;
 }
-
-
-
 
 @media all and (max-width: 500px) {
     .card-list {
@@ -320,4 +312,29 @@ h2:after{
     width: 300px;
     height: 300px;
     background: #000000;
+}
+
+/* Aout Me */
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bio p {
+    word-spacing: 0,5em;
+}
+
+.aboutme-pic-container {
+    width: 100%;
+}
+
+.aboutme-pic {
+    width: 100%;
+    height: 600px;
+    border-radius: 50%;
+    padding: 10px;
+   box-shadow: 0 0 100px #999999;
 }
