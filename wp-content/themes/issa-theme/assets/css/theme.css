@@ -12,7 +12,7 @@
 }
 
 body {
-    font-family: 'Merriweather', serif !important;
+    font-family: 'Dancing Script', cursive !important;
 }
 
 /* TITLE */
@@ -48,14 +48,14 @@ h2:after {
 
 h3 {
     margin-bottom: 60px !important;
-    font-size:2.5em !important;
+    font-size: 2.5em !important;
 }
 
 /* NAVBAR */
 
 
 .showcase {
-    background: var(--primary-color);
+
     color: #fff;
     height: 70vh;
     position: relative;
@@ -63,7 +63,6 @@ h3 {
 
 .showcase:before {
     content: '';
-    background: url('../images/massage-background.jpg') no-repeat center center/cover;
     background: #CC95C0;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);
@@ -76,7 +75,9 @@ h3 {
     width: 100%;
     height: 100%;
     z-index: -1;
+    border-radius: 0 0 85% 85% / 30%;
 }
+
 
 .showcase .showcase-inner {
     display: flex;
@@ -324,7 +325,8 @@ h3 {
 }
 
 .bio p {
-    word-spacing: 0,5em;
+    word-spacing: 0, 5em;
+    font-size: 1.5em;
 }
 
 .aboutme-pic-container {
@@ -336,5 +338,5 @@ h3 {
     height: 600px;
     border-radius: 50%;
     padding: 10px;
-   box-shadow: 0 0 100px #999999;
+    box-shadow: 0 0 100px #999999;
 }
