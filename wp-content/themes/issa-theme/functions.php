@@ -38,3 +38,10 @@ function hide_admin_bar_from_front_end()
     return false;
 }
 add_filter('show_admin_bar', 'hide_admin_bar_from_front_end');
+
+
+function cmb_get_image_id($image_src) {
+    global $wpdb;
+    $image = $wpdb->get_col($wpdb->prepare("SELECT ID FROM $wpdb->posts WHERE guid='%s';", $image_src )); 
+    return $image[0]; //return the image ID
+}
