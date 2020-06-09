@@ -3,7 +3,7 @@
     --primary-color: rgba(0, 145, 173, 0.35);
     --overlay-color: rgba(24, 39, 51, 0.85);
     --menu-speed: 0.75s;
-    --section-height: 1100px;
+
 }
 
 * {
@@ -12,35 +12,35 @@
     box-sizing: border-box;
 }
 
+.container-fluid {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
 body {
     font-family: 'Lobster Two', cursive !important;
 }
 
 
 section {
-    height: var(--section-height);
-    padding-top: 120px;
+    padding: 120px;
     opacity: 0.8;
-    
 }
 
-
-
-  
 
 /* TITLE */
 
 .title {
     text-align: center !important;
     margin-bottom: 120px;
-    
+
 }
 
 h2 {
 
     font-size: 4em !important;
-    margin:auto;
-   
+    margin: auto;
+
     padding-bottom: 40px;
     text-align: center !important;
 
@@ -87,7 +87,7 @@ h3 {
     width: 100%;
     height: 100%;
     z-index: -1;
-    border-radius: 0 0 85% 85% / 30%;
+   
 }
 
 
@@ -130,6 +130,7 @@ h3 {
     left: 0;
     z-index: 2;
     cursor: pointer;
+    pointer-events: auto !important;
     width: 50px;
     height: 50px;
     opacity: 0;
@@ -262,17 +263,13 @@ h3 {
 
 .services {
     background-color: #7cd2ab;
-    
 }
-
 
 /* Cards */
 
 .cards-list {
     margin-top: 80px;
     width: 100%;
-   
-
 }
 
 .card-container {
@@ -282,6 +279,7 @@ h3 {
     border-radius: 40px;
     box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
     transition: 0.4s;
+    margin-bottom: 10px;
 }
 
 .card-container a {
@@ -339,17 +337,17 @@ h3 {
 /* Aout Me */
 
 .bio {
-   
+
     padding: 80px;
 }
 
 .bio p {
     word-spacing: 0, 5em;
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 .aboutme-pic-container {
-    width: 100%;
+    margin-top: 180px;
 }
 
 .aboutme-pic {
@@ -362,27 +360,27 @@ h3 {
 
 /* FAQ */
 
-.faq {
-    background-color: #d2887c;
-}
-
-.faq-container {
-    width: 100%;
-    max-width: 80rem;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-}
 
 
 
 /* Contact */
 
 .contact {
-    background-color: #937cd2;
+    background-color: #ffffff;
 }
 
 
-/* FAQ 2 */
+/* FAQ */
+.faq {
+    background-color: #d2887c;
+}
+
+.faq-container {
+    width: 50% !important;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
 
 .accordion__item {
     border-bottom: 1px solid #dce7eb;
@@ -440,8 +438,6 @@ h3 {
     content: "\f056";
 }
 
-
-
 .accordion__content-inner {
     padding: 0 40px 10px 40px;
 }
@@ -450,4 +446,200 @@ h3 {
     transition: height 0.3s ease-out;
     height: 0;
     overflow: hidden;
+}
+
+/* Form */
+
+.form-container {
+    background-color: #ffffff;
+}
+
+.wpcf7 label {
+    font-size: 1.5em;
+    color: #797070;
+}
+
+/* Footer */
+
+.footer-distributed {
+    background: #666;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px 'Open Sans', cursive;
+    margin: 0;
+}
+
+.footer-distributed h3 span {
+    color: lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    font-weight: 400;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #222;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    font-weight: 400;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: lightseagreen;
+    text-decoration: none;
+    ;
+}
+
+.footer-distributed .footer-links a:before {
+    content: "|";
+    font-weight: 300;
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+    content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+    .footer-distributed {
+        font: bold 14px sans-serif;
+    }
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+
 }

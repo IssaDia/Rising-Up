@@ -7,12 +7,13 @@ $args = array(
     'orderby' => 'menu_order',
     'order' => 'ASC'
 );
-
+$services_custom_type_obj = get_post_type_object('services');
+$title = $services_custom_type_obj->label;
 $services = new WP_Query($args);
 
 ?>
 <div class="col-md-12 title">
-    <h2><?php the_title(); ?></h2>
+    <h2><?php echo $title; ?></h2>
 </div>
 <div class="cards-list">
     <?php if ($services->have_posts()) : while ($services->have_posts()) : $services->the_post(); ?>
