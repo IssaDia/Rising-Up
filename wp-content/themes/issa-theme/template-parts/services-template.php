@@ -1,20 +1,20 @@
-<div class="cards-list">
-    <?php
-    wp_reset_postdata();
+<?php
+wp_reset_postdata();
 
-    $args = array(
-        'showposts' => '-1',
-        'post_type' => 'services',
-        'orderby' => 'menu_order',
-        'order' => 'ASC'
-    );
+$args = array(
+    'showposts' => '-1',
+    'post_type' => 'services',
+    'orderby' => 'menu_order',
+    'order' => 'ASC'
+);
 
-    $services = new WP_Query($args);
+$services = new WP_Query($args);
 
-    ?>
-    <div class="col-md-12 title">
+?>
+<div class="col-md-12 title">
     <h2><?php the_title(); ?></h2>
-    </div>
+</div>
+<div class="cards-list">
     <?php if ($services->have_posts()) : while ($services->have_posts()) : $services->the_post(); ?>
             <div class="card-container">
                 <a style="display:block" href="<?php the_permalink(); ?>">

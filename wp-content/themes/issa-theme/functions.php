@@ -77,4 +77,35 @@ function services_custom_type()
 }
 
 add_action('init', 'services_custom_type');
-add_theme_support( 'post-thumbnails' ); 
+
+function faq_custom_type()
+{
+
+    register_post_type(
+        'faq',
+
+        array(
+            'labels' => array(
+                'name' => __('Questions Fréquentes'),
+                'singular_name' => __('Question'),
+                'menu_name' => 'Questions Fréquentes',
+                'add_new_item'        => __('Ajouter une nouvelle question'),
+                'add_new'             => __('Ajouter une nouvelle'),
+            ),
+            'hierarchical' => false,
+            'supports' => array(
+                'title',
+                'editor',
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'services', "with_front" => false),
+
+
+        )
+    );
+}
+
+add_action('init', 'faq_custom_type');
+
+add_theme_support('post-thumbnails');

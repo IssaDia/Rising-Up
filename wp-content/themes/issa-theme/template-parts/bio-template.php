@@ -1,29 +1,27 @@
-<?php
 
-/**
- * Template Name: Bio
- */
+
+<?php
+$id = 80;
+$title = get_field('titre', $id);
+$image = get_field('photo', $id)['sizes']['large'] ;
+$content_post = get_post($id);
+$content = $content_post->post_content;
+$content = apply_filters('the_content', $content);
+$content = str_replace(']]>', ']]&gt;', $content);
 
 ?>
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-<?php
-$id = get_the_ID();
-$title = get_field('titre', $id);
-$image = get_field('image')['sizes']['large'];
 
-var_dump($id);
-
-?>
         <div class="row">
             <div class="col-md-7 bio">
-                <?php $title  ?>
-                <?php echo the_content() ?>
+                <h3><?php echo $title  ?></h3>
+                <p><?php echo $content ?></p>
             </div>
             <div class="col-md-5">
                 <div class="aboutme-pic-container">
-                    <img src="<?php echo $image ?>">
+                    <img class="aboutme-pic"src="<?php echo $image ?>" alt="">
                 </div>
             </div>
         </div>
