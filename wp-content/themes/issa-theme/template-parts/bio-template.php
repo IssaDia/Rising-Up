@@ -14,23 +14,21 @@ $content = str_replace(']]>', ']]&gt;', $content);
             <div class="col-md-12 title">
                 <h2>A propos de moi</h2>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-7 bio">
-                <h3><?php echo $title  ?></h3>
-                <p><?php echo $content ?></p>
-            </div>
-            <div class="col-md-5">
-                <div class="aboutme-pic-container">
-                    <img class="aboutme-pic img-fluid" src="<?php echo $image ?>" alt="">
+            <div class="row">
+                <div class="col-md-7 bio-text">
+                    <p><?php echo $content ?></p>
+                </div>
+                <div class="col-md-5">
+                    <div class="aboutme-pic-container">
+                        <img class="aboutme-pic img-fluid" src="<?php echo $image ?>" alt="">
+                    </div>
                 </div>
             </div>
-        </div>
-    <?php endwhile; ?>
-<?php else : ?>
-    <!-- article -->
-    <article>
-        <h2><?php _e('Sorry, nothing to display.', 'html5blank'); ?></h2>
-    </article>
-    <!-- /article -->
-<?php endif; ?>
+        <?php endwhile; ?>
+    <?php else : ?>
+        <!-- article -->
+        <article>
+            <h2><?php _e('Sorry, nothing to display.', 'html5blank'); ?></h2>
+        </article>
+        <!-- /article -->
+    <?php endif; ?>

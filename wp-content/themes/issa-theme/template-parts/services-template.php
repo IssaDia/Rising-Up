@@ -1,6 +1,6 @@
 <?php
-wp_reset_postdata();
 
+wp_reset_postdata();
 $args = array(
     'showposts' => '-1',
     'post_type' => 'services',
@@ -15,7 +15,7 @@ $services = new WP_Query($args);
 <div class="col-md-12 title">
     <h2><?php echo $title; ?></h2>
 </div>
-<div class="cards-list">
+<div class="cards-list row">
     <?php if ($services->have_posts()) : while ($services->have_posts()) : $services->the_post(); ?>
             <div class="card-container">
                 <a style="display:block" href="<?php the_permalink(); ?>">
@@ -26,22 +26,13 @@ $services = new WP_Query($args);
                 <div class="card_title">
                     <p><?php the_title(); ?></p>
                 </div>
-
             </div>
-
         <?php endwhile; ?>
-
     <?php else : ?>
-
         <!-- article -->
         <article>
-
             <h2><?php _e('Sorry, nothing to display.', 'html5blank'); ?></h2>
-
         </article>
         <!-- /article -->
-
     <?php endif; ?>
-
-    <?php
-    wp_reset_postdata(); ?>
+    <?php wp_reset_postdata(); ?>
