@@ -17,8 +17,10 @@
     padding-left: 0px !important;
 }
 
+@import url("https://fonts.googleapis.com/css?family=Ek+Mukta:700|Muli:200,300,400");
+
 body {
-    font-family: 'Lobster Two', cursive !important;
+    font-family: 'Ek Mukta', cursive !important;
 }
 
 

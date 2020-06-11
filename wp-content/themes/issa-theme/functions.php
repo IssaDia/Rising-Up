@@ -60,23 +60,25 @@ function services_custom_type()
                 'singular_name' => __('Service'),
                 'menu_name' => 'Services'
             ),
-            'hierarchical' => false,
+            'hierarchical' => true,
             'supports' => array(
                 'title',
                 'thumbnail',
                 'editor',
                 'page-attributes'
             ),
-            'public' => true,
-            'has_archive' => true,
-            'rewrite' => array('slug' => 'services', "with_front" => false),
 
-
+            'rewrite'            => array('slug' => 'services', 'with_front' => false),
+            'has_archive'        => false,
+            'public'             => true,
+            'publicly_queryable' => true,
         )
     );
 }
 
 add_action('init', 'services_custom_type');
+flush_rewrite_rules();
+
 
 function faq_custom_type()
 {
@@ -96,10 +98,12 @@ function faq_custom_type()
             'supports' => array(
                 'title',
                 'editor',
+                'page-attributes'
             ),
             'public' => true,
             'has_archive' => true,
             'rewrite' => array('slug' => 'services', "with_front" => false),
+
 
 
         )
