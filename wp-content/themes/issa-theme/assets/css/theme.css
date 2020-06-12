@@ -12,15 +12,10 @@
     box-sizing: border-box;
 }
 
-.container-fluid {
-    padding-right: 0px !important;
-    padding-left: 0px !important;
-}
-
 @import url("https://fonts.googleapis.com/css?family=Ek+Mukta:700|Muli:200,300,400");
 
 body {
-    font-family: 'Ek Mukta', cursive !important;
+    font-family: 'Lobster Two', cursive !important;
 }
 
 
@@ -148,6 +143,11 @@ h3 {
 }
 
 /* Cards */
+
+.col-md-4 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
 
 .cards-list {
     margin-top: 80px;

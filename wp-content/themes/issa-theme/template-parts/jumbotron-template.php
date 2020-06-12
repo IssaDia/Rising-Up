@@ -1,5 +1,5 @@
-<div class="jumbotron">
-    <div class="jumbotronHeader">
+
+    <div class="jumbotronHeader col s12">
         <div class="jumbotronContainerBefore" id="jumbotronContainerBefore"></div>
         <div class="jumbotronBody" id="jumbotronBody">
             <small class="jumbotronCategory" id="jumbotronCategory">RISING UP</small>
@@ -7,4 +7,3 @@
             <p>Un voyage inititatique au service de votre santé</p>
         </div>
     </div>
-</div>

@@ -1,6 +1,5 @@
 <?php include get_theme_file_path("template-parts/footer-template.php"); ?>
 
-
 </div>
 <?php wp_footer() ?>
 <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>

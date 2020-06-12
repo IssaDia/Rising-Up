@@ -20,6 +20,7 @@ function theme_setup()
 }
 add_action('init', 'theme_setup');
 
+
 function myplugin_settings()
 {
     // Add tag metabox to page
@@ -69,7 +70,7 @@ function services_custom_type()
             ),
 
             'rewrite'            => array('slug' => 'services', 'with_front' => false),
-            'has_archive'        => false,
+            'has_archive'        => true,
             'public'             => true,
             'publicly_queryable' => true,
         )
