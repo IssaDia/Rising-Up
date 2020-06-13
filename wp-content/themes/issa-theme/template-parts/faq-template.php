@@ -11,7 +11,6 @@ $faqs = new WP_Query($args);
 $faq_custom_type_obj = get_post_type_object('faq');
 $title = $faq_custom_type_obj->label;
 ?>
-<div class="row">
     <div class="col-md-12 title">
         <h2><?php echo $title ?></h2>
     </div>
@@ -32,7 +31,6 @@ $title = $faq_custom_type_obj->label;
                 <?php endwhile; ?>
         </div>
     </div>
-</div>
 <?php else : ?>
     <!-- article -->
     <article>
@@ -43,5 +41,3 @@ $title = $faq_custom_type_obj->label;
 
 <?php
 wp_reset_postdata(); ?>
-
-</div>

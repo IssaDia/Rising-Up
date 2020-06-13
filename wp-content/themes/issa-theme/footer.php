@@ -1,6 +1,6 @@
 <?php include get_theme_file_path("template-parts/footer-template.php"); ?>
 
-</div>
+
 <?php wp_footer() ?>
 <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 <!-- JS, Popper.js, and jQuery -->
@@ -9,6 +9,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</div>
 </body>
 
 </html>
