@@ -7,7 +7,7 @@ function theme_enqueue_scripts()
 }
 add_action('wp_enqueue_scripts', 'theme_enqueue_scripts');
 
-
+require_once('bs4navwalker.php');
 function theme_setup()
 {
     add_theme_support('custom-logo', array(
