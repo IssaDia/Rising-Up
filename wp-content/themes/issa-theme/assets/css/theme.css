@@ -21,11 +21,10 @@ body {
 
 section {
     padding: 120px;
-   
     background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
     background-position: center;
     background-repeat: repeat;
-    background-size: 7%;
+    background-size: 3%;
     background-color: #fff;
 }
 
@@ -77,10 +76,18 @@ h3 {
     padding: 20px;
 }
 
+.navbar-toggler {
+    margin-bottom: 20px;
+}
+
+.nav-link {
+    color: #ffffff !important;
+}
+
 /* Juùmbotron */
 
 .jumbotron {
-   background-color: #000000 !important;
+    background-color: #000000 !important;
     background-position: center;
     background-size: cover;
     position: relative;
@@ -95,30 +102,32 @@ h3 {
     opacity: 0.9;
 }
 
- .jumbotronHeader {
-     margin-bottom: 15px;
-     margin-top: 250px;
-     margin-left: 100px;
-     display: flex;
-     align-items: flex-start;
+.jumbotronHeader {
+    margin-bottom: 15px;
+    margin-top: 250px;
+    margin-left: 100px;
+    display: flex;
+    align-items: flex-start;
 }
- .jumbotronCategory {
-	 display: block;
-	 position: relative;
-	 padding-left: 25px;
-	 font-family: "Muli", sans-serif;
-	 font-size: 14px;
-	 line-height: 20px;
+
+.jumbotronCategory {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    font-family: "Muli", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
 }
- .jumbotronCategory::before {
-	 content: "";
-	 display: block;
-	 position: absolute;
-	 left: 0;
-	 top: 9px;
-	 width: 15px;
-	 height: 2px;
-	 background-color: #fc0;
+
+.jumbotronCategory::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 15px;
+    height: 2px;
+    background-color: #fc0;
 }
 
 
@@ -132,8 +141,8 @@ h3 {
 }
 
 .jumbotronBody {
-    margin-left:40px;
-    margin-top:20px;
+    margin-left: 40px;
+    margin-top: 20px;
 }
 
 
@@ -141,73 +150,57 @@ h3 {
 
 .services {
     background-color: #7cd2ab;
+    text-align: center;
 }
 
 /* Cards */
 
-.col-md-4 {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-}
-
-.cards-list {
-    margin-top: 80px;
-    width: 100%;
-}
-
-.card-container {
+.card-service {
     margin: 30px auto;
-    width: 300px;
-    height: 300px;
+    width: 300px !important;
+    height: 200px !important;
     border-radius: 40px;
     box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
     transition: 0.4s;
     margin-bottom: 10px;
 }
 
-.card-container a {
+
+.card-service a {
 
     width: inherit;
     height: inherit;
     cursor: pointer;
 
-
 }
 
-.card-container .card_image {
+.card-service .card_image {
     width: inherit;
     height: inherit;
     border-radius: 40px;
 }
 
-.card-container .card_image img {
+.card-service .card_image img {
     width: inherit;
     height: inherit;
     border-radius: 40px;
     object-fit: cover;
 }
 
-.card-container .card_title {
+.card_title {
     text-align: center;
     font-weight: bold;
     font-size: 2.2em;
-    margin-top: -80px;
     height: 40px;
     color: #ffffff;
 }
 
-.card-container:hover {
+.card-service:hover {
     transform: scale(0.9, 0.9);
     box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
         -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
 }
 
-@media all and (max-width: 500px) {
-    .card-list {
-        /* On small screens, we are no longer using row direction but column */
-        flex-direction: column;
-    }
-}
 
 
 
@@ -218,8 +211,6 @@ h3 {
 }
 
 /* Aout Me */
-
-.bio {}
 
 .bio-text {
 
@@ -233,7 +224,7 @@ h3 {
 }
 
 .aboutme-pic-container {
-    margin-top: 80px;
+    margin-top: 140px;
 }
 
 .aboutme-pic {
@@ -244,10 +235,13 @@ h3 {
     box-shadow: 0 0 100px #999999;
 }
 
-/* FAQ */
-
-
-
+@media all and (max-width: 500px) {
+    .bio-elements {
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+}
 
 /* Contact */
 
@@ -262,8 +256,7 @@ h3 {
 }
 
 .faq-container {
-    width: 50% !important;
-    max-width: 80rem;
+    
     margin: 0 auto;
     padding: 0 1.5rem;
 }
@@ -351,7 +344,6 @@ h3 {
     background: #666;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
-    width: 100%;
     text-align: left;
     font: bold 16px sans-serif;
     padding: 55px 50px;
@@ -366,9 +358,6 @@ h3 {
 
 /* Footer left */
 
-.footer-distributed .footer-left {
-    width: 40%;
-}
 
 /* The company logo */
 
@@ -407,9 +396,6 @@ h3 {
 
 /* Footer Center */
 
-.footer-distributed .footer-center {
-    width: 35%;
-}
 
 .footer-distributed .footer-center i {
     background-color: #33383b;
@@ -466,10 +452,6 @@ h3 {
 
 /* Footer Right */
 
-.footer-distributed .footer-right {
-    width: 20%;
-}
-
 .footer-distributed .footer-company-about {
     line-height: 20px;
     color: #92999f;
@@ -497,7 +479,7 @@ h3 {
     cursor: pointer;
     background-color: #33383b;
     border-radius: 2px;
-
+    padding-top: 10px;
     font-size: 20px;
     color: #ffffff;
     text-align: center;
@@ -505,6 +487,15 @@ h3 {
 
     margin-right: 3px;
     margin-bottom: 5px;
+}
+
+.contact-footer-container {
+    color: #ffffff;
+ display: flex;
+}
+
+.contact-footer-container i {
+   margin-right: 15px;
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */
@@ -528,4 +519,20 @@ h3 {
         margin-left: 0;
     }
 
+}
+
+/* Service Single Page */
+
+.Counterstrain-section {
+    background-image: url(../images/counterstrain.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    border-radius: 50%;
+}
+
+.Nutrition-section {
+    background-image: url(../images/nutrition.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    border-radius: 50%;
 }

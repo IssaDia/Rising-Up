@@ -5,11 +5,11 @@ include get_theme_file_path("template-parts/navigation.php");
 ?>
 
 
-<section>
+<section class="">
 
 <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
-        <div class="entry">
+        <div class="<?php the_title(); ?>-section">
             <h2 class="title"><?php the_title(); ?></h2>
             <?php the_content(); ?>
         </div>
