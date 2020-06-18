@@ -5,15 +5,29 @@ include get_theme_file_path("template-parts/navigation.php");
 ?>
 
 
-<section class="">
 
-<?php if (have_posts()) : ?>
-    <?php while (have_posts()) : the_post(); ?>
-        <div class="<?php the_title(); ?>-section">
-            <h2 class="title"><?php the_title(); ?></h2>
-            <?php the_content(); ?>
+<section class="single-page-container">
+
+    <div class="previous row">
+        <div class="col-md-12">
+            <a class="previous-button" onclick="history.back()">
+                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                <span class="previous-text">Retour</span>
+            </a>
         </div>
-    <?php endwhile;  ?>
+    </div>
+
+    <?php if (have_posts()) : ?>
+        <?php while (have_posts()) : the_post(); ?>
+       
+            <div class="<?php echo strtolower(the_title()) ?>-section">
+                <div class="">
+                    <h3 class="single-title"><?php the_title(); ?></h3>
+                </div>
+
+                <?php the_content(); ?>
+            </div>
+        <?php endwhile;  ?>
 </section>
 
 <?php else : ?>

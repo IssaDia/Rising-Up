@@ -16,7 +16,7 @@ $services = new WP_Query($args);
     <h2><?php echo $title; ?></h2>
 </div>
 <?php if ($services->have_posts()) : while ($services->have_posts()) : $services->the_post(); ?>
-        <div class="col-md-6 card-container">
+        <div class="col">
             <div class="card-service">
                 <a style="display:block" href="<?php the_permalink(); ?>">
                     <div class="card_image">
@@ -27,6 +27,7 @@ $services = new WP_Query($args);
                     <p><?php the_title(); ?></p>
                 </div>
             </div>
+
         </div>
     <?php endwhile; ?>
 

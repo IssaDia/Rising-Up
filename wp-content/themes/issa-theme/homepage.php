@@ -6,16 +6,16 @@
 include get_theme_file_path("header.php");
 include get_theme_file_path("template-parts/navigation.php");
 ?>
-<section class="services row">
+<div class="services row section">
     <?php include get_theme_file_path("template-parts/services-template.php"); ?>
-</section>
-<section class="bio row">
+</div>
+<div class="bio row section">
     <?php include get_theme_file_path("template-parts/bio-template.php"); ?>
-</section>
-<section class="faq row" id="faq">
+</div>
+<div class="faq row section" id="faq">
     <?php include get_theme_file_path("template-parts/faq-template.php"); ?>
-</section>
-<section class="contact row" id="contact">
+</div>
+<div class="contact row section" id="contact">
     <?php include get_theme_file_path("template-parts/contact-template.php"); ?>
-</section>
+</div>
 <?php include get_theme_file_path("footer.php"); ?>

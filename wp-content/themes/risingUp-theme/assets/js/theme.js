@@ -61,11 +61,4 @@ jQuery.each(accordion, function () { // loop through all accordions on the page
 });
 
 
-// Previous Page function 
-
-function goBack() {
-  window.history.back();
-}
-
-
 
