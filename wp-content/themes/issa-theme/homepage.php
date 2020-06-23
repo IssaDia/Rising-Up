@@ -3,9 +3,11 @@
 /**
  * Template Name: Homepage
  */
-include get_theme_file_path("header.php");
-include get_theme_file_path("template-parts/navigation.php");
+get_header();
 ?>
+<div class="row jumbotron">
+    <?php include get_theme_file_path("template-parts/jumbotron-template.php"); ?>
+</div>
 <div class="services row section">
     <?php include get_theme_file_path("template-parts/services-template.php"); ?>
 </div>
@@ -18,4 +20,4 @@ include get_theme_file_path("template-parts/navigation.php");
 <div class="contact row section" id="contact">
     <?php include get_theme_file_path("template-parts/contact-template.php"); ?>
 </div>
-<?php include get_theme_file_path("footer.php"); ?>
+<?php get_footer(); ?>

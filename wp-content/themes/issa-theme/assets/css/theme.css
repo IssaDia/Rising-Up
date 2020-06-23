@@ -1,5 +1,3 @@
-
-
 * {
     margin: 0;
     padding: 0;
@@ -12,16 +10,10 @@
 
 @import url("https://fonts.googleapis.com/css?family=Ek+Mukta:700|Muli:200,300,400");
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-    {
-    font-family: 'Lobster Two', cursive !important;
+h2 {
+    margin-top: 20px !important;
+    font-size: 1em !important;
 }
-
 .p,
 footer {
     font-family: "Muli", sans-serif !important;
@@ -32,6 +24,7 @@ body {
     height: 100%;
     min-height: 100%;
     max-height: 100%;
+    font-family: 'Lobster Two', cursive;
 }
 
 
@@ -54,25 +47,23 @@ body {
 
 }
 
-h2 {
+.title-text {
 
-    font-size: 4em !important;
-    margin: auto;
-
+    font-size: 3em !important;
     padding-bottom: 40px;
     text-align: center !important;
-
 }
 
-h2:after {
+.title-text:after {
     content: "";
-    position: absolute;
+    display: block;
     bottom: 0;
     left: 0;
     right: 0;
     width: 120px;
     border-top: 5px solid black;
     margin: auto;
+    margin-top: 20px;
 
 }
 
@@ -84,7 +75,7 @@ h3 {
 /* NAVBAR */
 
 .navbar {
-    
+
     background: #2C5BCA !important;
     opacity: 0.8;
     box-shadow: -1px -5px 80px -9px rgba(0, 0, 0, 0.75);
@@ -192,12 +183,11 @@ h3 {
 }
 
 .card-service {
-    margin: 30px auto;
-
+    margin:  auto;
     width: 300px !important;
-    height: 200px !important;
+    height: 300px !important;
     border-radius: 40px;
-    box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     transition: 0.4s;
     margin-bottom: 10px;
 }
@@ -213,8 +203,8 @@ h3 {
 
 .card-service p {
 
-   font-size: 18px;
-   margin-top: 20px;
+    font-size: 18px;
+    margin-top: 20px;
 
 }
 
@@ -240,13 +230,9 @@ h3 {
 }
 
 .card-service:hover {
-    transform: scale(0.9, 0.9);
-    box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
-        -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+    transform: scale(0.98, 0.98);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
-
-
-
 
 .box {
     width: 300px;
@@ -262,18 +248,25 @@ h3 {
 
 }
 
-.bio p {
-    word-spacing: 0, 5em;
-    font-size: 1.5em;
+
+.bio-text {
+
+    padding: 80px;
+
+}
+
+
+.bio-text p {
 }
 
 .aboutme-pic-container {
     margin-top: 120px;
+    padding-left: 80px;
 }
 
 .aboutme-pic {
-    width: 100%;
-    height: 100px;
+    width: 350px;
+    height: 300px;
     border-radius: 50%;
     padding: 10px;
     box-shadow: 0 0 100px #999999;
@@ -405,7 +398,7 @@ h3 {
 
 .footer-distributed h3 {
     color: #ffffff;
-    font: normal 36px 'Open Sans', cursive;
+    font-size: 36px;
     margin: 0;
 }
 

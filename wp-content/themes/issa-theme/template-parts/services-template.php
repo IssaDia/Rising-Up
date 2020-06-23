@@ -13,20 +13,21 @@ $services = new WP_Query($args);
 
 ?>
 <div class="col-md-12 title">
-    <h2><?php echo $title; ?></h2>
+    <span class='title-text'><?php echo $title; ?></span>
 </div>
 <?php if ($services->have_posts()) : while ($services->have_posts()) : $services->the_post(); ?>
         <div class="col-md-6 card-container">
             <div class="card-service">
                 <a style="display:block" href="<?php the_permalink(); ?>">
                     <div class="card_image">
-                        <?php echo wp_get_attachment_image(get_post_thumbnail_id(), array('700', '600'), "", array("class" => "img-responsive")); ?>
+                        <?php echo wp_get_attachment_image(get_post_thumbnail_id(),"", array("class" => "img-responsive")); ?>
                     </div>
                 </a>
-                <div class="card_title">
-                    <h3><?php the_title(); ?></h3>
-                </div>
+               
             </div>
+            <div class="card_title">
+                    <h2><?php the_title(); ?></h2>
+                </div>
         </div>
     <?php endwhile; ?>
 
