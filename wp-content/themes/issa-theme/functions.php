@@ -114,3 +114,9 @@ function faq_custom_type()
 add_action('init', 'faq_custom_type');
 
 add_theme_support('post-thumbnails');
+
+function wpc_dashicons()
+{
+    wp_enqueue_style('dashicons');
+}
+add_action('wp_enqueue_scripts', 'wpc_dashicons');

@@ -24,7 +24,7 @@ $services = new WP_Query($args);
                     </div>
                 </a>
                 <div class="card_title">
-                    <p><?php the_title(); ?></p>
+                    <h3><?php the_title(); ?></h3>
                 </div>
             </div>
         </div>
