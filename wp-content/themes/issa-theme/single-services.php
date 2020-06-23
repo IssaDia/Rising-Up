@@ -1,7 +1,6 @@
 <?php
 
-include get_theme_file_path("header.php");
-include get_theme_file_path("template-parts/navigation.php");
+get_header();
 ?>
 
 

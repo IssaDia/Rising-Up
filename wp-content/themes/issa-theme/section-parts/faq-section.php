@@ -24,7 +24,7 @@ $title = $faq_custom_type_obj->label;
                     </span>
                     <div id="panel5" class="accordion__content" role="tabpanel" aria-hidden="true" aria-labelledby="tab5" data-binding="expand-accordion-container">
                         <div class="accordion__content-inner">
-                            <p><?php the_content(); ?></p>
+                           <?php the_content(); ?>
                         </div>
                     </div>
                 </article>

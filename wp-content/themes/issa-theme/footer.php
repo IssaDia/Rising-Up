@@ -1,4 +1,4 @@
-<?php include get_theme_file_path("template-parts/footer-template.php"); ?>
+<?php include get_theme_file_path("section-parts/footer-section.php"); ?>
 
 
 <?php wp_footer() ?>

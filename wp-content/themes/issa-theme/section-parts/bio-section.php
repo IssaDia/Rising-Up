@@ -23,10 +23,8 @@ $content = str_replace(']]>', ']]&gt;', $content);
 
             <?php echo $bio['bio_text']; ?>
 </div>
-<div class="col-md-5">
-    <div class="aboutme-pic-container">
-        <img class="aboutme-pic img-fluid" src="<?php echo $bio['bio_image']['url']; ?>" alt="">
-    </div>
+<div class="col-md-5 aboutme-pic-container">
+    <img class="aboutme-pic img-fluid" src="<?php echo $bio['bio_image']['url']; ?>" alt="">
 </div>
 <?php endwhile;
 ?>

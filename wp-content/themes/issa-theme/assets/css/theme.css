@@ -8,15 +8,10 @@
     margin: 0 !important
 }
 
-@import url("https://fonts.googleapis.com/css?family=Ek+Mukta:700|Muli:200,300,400");
 
 h2 {
     margin-top: 20px !important;
     font-size: 1em !important;
-}
-.p,
-footer {
-    font-family: "Muli", sans-serif !important;
 }
 
 html,
@@ -24,13 +19,12 @@ body {
     height: 100%;
     min-height: 100%;
     max-height: 100%;
-    font-family: 'Lobster Two', cursive;
+    font-family: 'Open Sans', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
 }
 
 
 .section {
     padding-bottom: 60px !important;
-    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
     background-position: center;
     background-repeat: repeat;
     background-size: 3%;
@@ -42,13 +36,12 @@ body {
 
 .title {
     text-align: center !important;
-    margin-bottom: 120px;
-    margin-top: 80px;
+    margin-bottom: 60px;
+    margin-top: 40px;
 
 }
 
 .title-text {
-
     font-size: 3em !important;
     padding-bottom: 40px;
     text-align: center !important;
@@ -76,14 +69,22 @@ h3 {
 
 .navbar {
 
-    background: #2C5BCA !important;
-    opacity: 0.8;
+    background: #2488C2;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5FB4E4, #2488C2);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5FB4E4, #2488C2);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     box-shadow: -1px -5px 80px -9px rgba(0, 0, 0, 0.75);
     padding: 20px;
 }
 
 .navbar-toggler {
     margin-bottom: 20px;
+}
+
+.navbar-brand {
+    padding-top: 0 !important;
 }
 
 .nav-link {
@@ -172,8 +173,18 @@ h3 {
 /* Services */
 
 .services {
-    background-color: #7cd2ab;
+    background-color: #5FB4E4;
     text-align: center;
+}
+
+.services .title-text {
+    color: #ffffff;
+
+}
+
+.services .title-text::after {
+    border-top: 5px solid #ffffff;
+
 }
 
 /* Cards */
@@ -183,12 +194,12 @@ h3 {
 }
 
 .card-service {
-    margin:  auto;
+    margin: auto;
     width: 300px !important;
     height: 300px !important;
     border-radius: 40px;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    transition: 0.4s;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: 0.3s;
     margin-bottom: 10px;
 }
 
@@ -222,16 +233,24 @@ h3 {
 }
 
 .card_title {
+    margin-top: 40px;
+    text-align: -webkit-center;
+
+}
+
+.card_title h2 {
+    border: 3px solid #fff;
+    width: 200px !important;
+    background: transparent;
     text-align: center;
-    font-weight: bold;
-    font-size: 2.2em;
-    height: 40px;
+    font-size: 1.2em;
+    padding: 12px 16px 10px;
     color: #ffffff;
 }
 
 .card-service:hover {
-    transform: scale(0.98, 0.98);
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transform: scale(1.08, 1.08);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .box {
@@ -242,26 +261,23 @@ h3 {
 
 /* Aout Me */
 
-.bio-text {
-
-    padding: 80px;
-
-}
-
+.bio {}
 
 .bio-text {
-
     padding: 80px;
+}
 
+.bio-text h2 {
+    font-weight: bold;
 }
 
 
-.bio-text p {
-}
+
 
 .aboutme-pic-container {
     margin-top: 120px;
     padding-left: 80px;
+    text-align: center;
 }
 
 .aboutme-pic {
@@ -272,24 +288,15 @@ h3 {
     box-shadow: 0 0 100px #999999;
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 480px) {
     .aboutme-pic {
-        height: 400px;
+        display: block;
+        margin: 0 auto;
 
     }
 }
 
-/* Contact */
-
-.contact {
-    background-color: #ffffff;
-}
-
-
 /* FAQ */
-.faq {
-    background-color: #d2887c;
-}
 
 .faq-container {
 
@@ -315,7 +322,7 @@ h3 {
     position: absolute;
     left: 15px;
     top: 12px;
-    color: #44BBA4;
+    color: #389CD6;
 }
 
 .accordion__title h5 {
@@ -337,7 +344,7 @@ h3 {
 .accordion {
     background-color: #fefffa;
     margin: 50px auto;
-    border-top: 6px solid #44BBA4;
+    border-top: 6px solid #2488C2;
     line-height: 1.6;
     box-shadow: 5px 5px 10px 0px #a4bac1;
 
@@ -354,7 +361,7 @@ h3 {
 }
 
 .accordion__content-inner {
-    padding: 0 40px 10px 40px;
+    padding: 0 40px 5px 40px;
 }
 
 .accordion__content {
@@ -364,24 +371,49 @@ h3 {
 }
 
 /* Form */
-
 .form-container {
-    background-color: #ffffff;
+    background-color: #2488C2;
+    padding: 20px;
+}
+
+.wpcf7 {
+    text-align: center;
+
 }
 
 .wpcf7 label {
-    font-size: 1.5em;
-    color: #797070;
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+.wpcf7-text .wpcf7-validates-as-required {
+    border-bottom: #ffffff !important;
+}
+
+.wpcf7 select {
+    font-size: 0.8em;
+    color: #ffffff;
+    background-color: #2488C2;
+    margin-top: 15px;
+}
+
+.wpcf7-submit {
+    color: #ffffff !important;
+}
+
+.wpcf7-submit:hover {
+    background-color: #ffffff !important;
+    color: #000000 !important;
 }
 
 /* Footer */
 
 .footer-distributed {
-    background: #666;
+
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
     text-align: left;
-    padding: 55px 30px;
+    background-color: bisque;
 }
 
 .footer-distributed .footer-left,
@@ -393,6 +425,17 @@ h3 {
 
 /* Footer left */
 
+.footer-distributed .footer-left {
+    background-color: #2488C2;
+}
+
+.footer-distributed .footer-center {
+    background-color: #389CD6;
+}
+
+.footer-distributed .footer-right {
+    background-color: #80C7EF;
+}
 
 /* The company logo */
 
@@ -433,15 +476,11 @@ h3 {
 
 
 .footer-distributed .footer-center i {
-    background-color: #33383b;
     color: #ffffff;
-    font-size: 25px;
+    font-size: 20px;
     width: 38px;
-    height: 38px;
-    border-radius: 50%;
     text-align: center;
     line-height: 42px;
-    margin: 10px 15px;
     vertical-align: middle;
 }
 
@@ -453,7 +492,6 @@ h3 {
 .footer-distributed .footer-center p {
     display: inline-block;
     color: #ffffff;
-    font-weight: 400;
     vertical-align: middle;
     margin: 0;
 }
@@ -461,7 +499,7 @@ h3 {
 .footer-distributed .footer-center p span {
     display: block;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 10px;
     line-height: 2;
 }
 
@@ -538,14 +576,26 @@ h3 {
     color: #ffffff !important;
 }
 
-.footer-map-container {
-    margin: 20px;
+.map-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
+
+@media all and (max-width: 500px) {
+    .map-container iframe {
+        width: 80%;
+        height: 260px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+
 
 .footer-map-container iframe {
     margin: auto;
-    border-radius: 20px;
-
 
 }
 
