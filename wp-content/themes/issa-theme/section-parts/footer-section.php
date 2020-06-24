@@ -25,7 +25,7 @@ $logo = $image[0]; ?>
         </div>
     </div>
     <div class="col-md-4 footer-right">
-            <h5>A propos de Rising Up</h5>
+            <h5>A PROPOS DE RISING UP</h5>
             <p class="footer-company-about">Un voyage initiatique au service de votre santé</p>
         <div class="footer-icons">
             <?php if (get_field('facebook', $id)) : ?>
