@@ -15,7 +15,7 @@ $services = new WP_Query($args);
 ?>
 
 <?php if ($services->have_posts()) : while ($services->have_posts()) : $services->the_post(); ?>
-        <div class="col-md-6 service-container">
+        <div class="col-md-6 service-container p-0 m-0">
             <div class="service-title">
                 <span><?php the_title(); ?></span>
             </div>

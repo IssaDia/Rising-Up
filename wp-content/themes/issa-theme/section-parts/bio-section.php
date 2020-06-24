@@ -11,9 +11,6 @@ $content = str_replace(']]>', ']]&gt;', $content);
 
 ?>
 
-<div class="col-md-12 title">
-    <span class='title-text'>Qui suis-je?</span>
-</div>
 <div class="col-md-7 bio-text">
     <?php if (have_rows('bio_content')) :
 

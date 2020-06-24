@@ -39,9 +39,9 @@
                 <li><a href="<?php echo the_field('linkedin', $id); ?>"><i class="fa fa-linkedin"></i></a></li>
             <?php endif; ?>
         </div>
-
+    </div>
+    <div class="col-md-12 sub-footer">
         <p class="footer-company-name">Rising Up © 2020 - <a href="http://localhost/mattproject/mentions-legales">Mentions Légales</a></p>
-
     </div>
 
 </footer>
