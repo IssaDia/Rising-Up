@@ -1,10 +1,15 @@
-<?php $id = 134; ?>
+<?php $id = 134;
+$custom_logo_id = get_theme_mod('custom_logo');
+$image = wp_get_attachment_image_src($custom_logo_id, 'full');
+$logo = $image[0]; ?>
 
 <footer class="footer-distributed row">
     <div class="col-md-4 footer-left">
-        <h3>Rising Up</h3>
+        <h5>RISING UP</h5>
+        <img src="<?php echo $logo ?>"></img>
     </div>
     <div class="col-md-4 footer-center">
+        <h5>L'ADRESSE DU CABINET</h5>
         <div class="contact-footer-container">
             <i class="fa fa-map-marker"></i>
             <span>Résidence Duc d'Havre Centre De Gaulle, 59200 TOURCOING </span>
@@ -20,11 +25,8 @@
         </div>
     </div>
     <div class="col-md-4 footer-right">
-        <p class="footer-company-about">
-            <span>A propos de Rising Up</span>
-            Un voyage initiatique au service de votre santé
-        </p>
-
+            <h5>A propos de Rising Up</h5>
+            <p class="footer-company-about">Un voyage initiatique au service de votre santé</p>
         <div class="footer-icons">
             <?php if (get_field('facebook', $id)) : ?>
                 <a href="<?php echo the_field('facebook', $id); ?>"><i class="fa fa-facebook"></i></a>

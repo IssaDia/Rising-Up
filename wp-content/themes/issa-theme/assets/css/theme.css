@@ -103,6 +103,14 @@ h3 {
     padding-right: 5px;
 }
 
+.dropdown-menu {
+    background-color: #2488C2 !important;
+}
+
+.dropdown-item:hover {
+    background-color: #5FB4E4 !important;
+}
+
 
 
 /* Juùmbotron */
@@ -135,7 +143,6 @@ h3 {
     display: block;
     position: relative;
     padding-left: 25px;
-    font-family: "Muli", sans-serif;
     font-size: 14px;
     line-height: 20px;
 }
@@ -198,7 +205,6 @@ h3 {
 }
 
 .service-link h4 {
-    font-family: 'Open Sans', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
     border: 3px solid #fff;
     width: 200px !important;
     background: transparent;
@@ -226,7 +232,6 @@ h3 {
 }
 
 .service-title span {
-    font-family: 'Open Sans', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
     font-size: 18px;
     line-height: 1.1em;
     margin-bottom: 4px;
@@ -361,6 +366,7 @@ h3 {
     padding: 0 1.5rem;
 }
 
+
 .accordion__item {
     border-bottom: 1px solid #dce7eb;
 }
@@ -483,7 +489,7 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 25px;
+    padding: 20px;
 
 }
 
@@ -491,6 +497,12 @@ h3 {
 
 .footer-distributed .footer-left {
     background-color: #2488C2;
+}
+
+.footer-distributed .footer-left img {
+    width: 50px;
+    margin: auto;
+
 }
 
 .footer-distributed .footer-center {
@@ -503,13 +515,23 @@ h3 {
 
 /* The company logo */
 
-.footer-distributed h3 {
+.footer-distributed h5 {
     color: #ffffff;
-    font-size: 36px;
+    font-size: 26px;
     margin: 0;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 15px;
 }
 
-.footer-distributed h3 span {
+
+
+.footer-distributed h5 span {
     color: lightseagreen;
 }
 
@@ -542,7 +564,7 @@ h3 {
 .footer-distributed .footer-center i {
     color: #ffffff;
     font-size: 16px;
-    
+
     text-align: center;
 }
 
@@ -557,12 +579,12 @@ h3 {
     display: block;
     font-weight: normal;
     font-size: 10px;
-    
+
 }
 
 .footer-distributed .footer-center p a {
     color: lightseagreen;
-   
+
 }
 
 .footer-distributed .footer-links a:before {
@@ -582,11 +604,11 @@ h3 {
 /* Footer Right */
 
 .footer-distributed .footer-company-about {
-    
+
     color: #ffffff;
     font-size: 13px;
     font-weight: normal;
-    margin: 0;
+    margin: auto;
     bottom: 0;
 }
 
@@ -595,11 +617,16 @@ h3 {
     color: #ffffff;
     font-size: 14px;
     font-weight: bold;
-    
+    margin: auto;
+
 }
 
 .footer-distributed .footer-icons a:hover {
     color: #000000 !important;
+}
+
+.footer-distributed .footer-icons {
+    margin: auto;
 }
 
 .footer-distributed .footer-icons a {
@@ -612,8 +639,7 @@ h3 {
     color: #ffffff;
     text-align: center;
     line-height: 35px;
-    margin-right: 3px;
-    margin-bottom: 5px;
+    margin: auto;
 }
 
 .contact-footer-container {
@@ -622,7 +648,7 @@ h3 {
 }
 
 .contact-footer-container i {
-   
+
     margin-right: 15px;
     padding-top: 3px;
 }
@@ -636,14 +662,15 @@ h3 {
     background-color: #000000;
 }
 
-.sub-footer p, a {
+.sub-footer p,
+a {
     color: #ffffff !important;
-    
+
 }
 
 .sub-footer a {
     color: #80C7EF !important;
-    
+
 }
 
 
@@ -665,8 +692,8 @@ h3 {
 
 .map-container p {
     color: #ffffff;
-    font-size: 1,5em;
-    
+    font-size: 1, 5em;
+
 }
 
 @media all and (max-width: 500px) {
@@ -691,14 +718,51 @@ h3 {
 
 /* Service Single Page */
 
-.single-page-container {
-    margin-bottom: 60px;
+.single-service-container {
+    background-color: #23689E;
+    text-align: center;
+
 }
 
-.single-title {
-    text-align: center !important;
-    margin-bottom: 120px;
+
+.single-service-container img {
+    background-color: #23689E;
+    text-align: center;
+    margin: 60px;
+
 }
+
+
+.single-title {
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 60px;
+}
+
+.single-text {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+
+.single-text ul {
+    
+    list-style: disc outside;
+}
+
+.single-text ul li::before {
+    content: "\f071"; /* FontAwesome Unicode */
+    color: red;
+    font-family: FontAwesome;
+    display: inline-block;
+    
+    margin-right: 0.3em; 
+    width: 1.3em; 
+}
+
+
+
+
 
 .single-service-container img {
     background-repeat: no-repeat;
