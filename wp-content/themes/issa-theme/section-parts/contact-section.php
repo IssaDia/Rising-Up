@@ -1,9 +1,4 @@
-<?php
 
-/**
- * Template Name: Contact
- */
-?>
 
 <div class="col-md-6 form-container">
     <h5>Formulaire de contact</h5>
