@@ -676,17 +676,21 @@ a {
 }
 
 /*  Contact Page */
+
+.contact-container {
+    position: absolute;
+}
 .contact-map {
     padding: 0 !important;
+    position: absolute;
+    margin-bottom: 180px;
 }
 
 .contact-map iframe {
-   
     filter: sepia(80%) hue-rotate(190deg) saturate(500%);
-
 }
 
-.contact-container {
+.contact-adress-container {
     background: #389CD6;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #80C7EF, #389CD6);
@@ -694,9 +698,23 @@ a {
     background: linear-gradient(to right, #80C7EF, #389CD6);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     box-shadow: 1px 0px 10px -5px rgba(0, 0, 0, 0.75);
-    width: 33%;
-    height: 200px;
+    width: 25%;
+    height: 300px;
+    position: absolute;
+    top: 90%;
+    left: 38%;
+    margin-bottom: 80px;
 }
+
+@media all and (max-width: 1080px) {
+    .contact-adress-container {
+        position:static !important;
+        width: 100%;
+
+    }
+}
+
+
 
 
 /* Service Single Page */
