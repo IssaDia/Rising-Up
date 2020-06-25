@@ -2,7 +2,9 @@
 $custom_logo_id = get_theme_mod('custom_logo');
 $image = wp_get_attachment_image_src($custom_logo_id, 'full');
 $logo = $image[0]; ?>
-
+<div class="row">
+    <div class="separation col-md-12"></div>
+</div>
 <footer class="footer-distributed row">
     <div class="col-md-4 footer-left">
         <h5>RISING UP</h5>
@@ -25,8 +27,8 @@ $logo = $image[0]; ?>
         </div>
     </div>
     <div class="col-md-4 footer-right">
-            <h5>A PROPOS DE RISING UP</h5>
-            <p class="footer-company-about">Un voyage initiatique au service de votre santé</p>
+        <h5>A PROPOS DE RISING UP</h5>
+        <p class="footer-company-about">Un voyage initiatique au service de votre santé</p>
         <div class="footer-icons">
             <?php if (get_field('facebook', $id)) : ?>
                 <a href="<?php echo the_field('facebook', $id); ?>"><i class="fa fa-facebook"></i></a>

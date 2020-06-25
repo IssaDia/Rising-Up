@@ -8,16 +8,12 @@ $content_post = get_post($id);
 $content = $content_post->post_content;
 $content = apply_filters('the_content', $content);
 $content = str_replace(']]>', ']]&gt;', $content);
-
 ?>
 
 <div class="col-md-7 bio-text">
     <?php if (have_rows('bio_content')) :
-
         while (have_rows('bio_content')) : the_row();
-
             $bio = get_field('bio_content'); ?>
-
             <?php echo $bio['bio_text']; ?>
 </div>
 <div class="col-md-5 aboutme-pic-container">
