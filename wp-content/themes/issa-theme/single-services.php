@@ -6,7 +6,6 @@ $time_label = get_field_object('duree_de_la_consultation')['label'];
 $price = get_field('tarif');
 $time = get_field('duree_de_la_consultation');
 $details = get_field('details_tarifs');
-var_dump($details);
 
 ?>
 <?php if (have_posts()) : ?>

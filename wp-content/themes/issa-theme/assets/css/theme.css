@@ -383,8 +383,8 @@ body {
     color: #ffffff;
 }
 
-.wpcf7-text .wpcf7-validates-as-required {
-    border-bottom: #ffffff !important;
+.form-container .wpcf7-form>p>label>span>input,textarea {
+    border-bottom: 1px solid #ffffff !important;
 }
 
 .wpcf7 select {
@@ -680,6 +680,7 @@ a {
 .contact-container {
     position: absolute;
 }
+
 .contact-map {
     padding: 0 !important;
     position: absolute;
@@ -692,11 +693,6 @@ a {
 
 .contact-adress-container {
     background: #389CD6;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #80C7EF, #389CD6);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #80C7EF, #389CD6);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     box-shadow: 1px 0px 10px -5px rgba(0, 0, 0, 0.75);
     width: 25%;
     height: 300px;
@@ -704,17 +700,109 @@ a {
     top: 90%;
     left: 38%;
     margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-adress-text {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    color: #ffffff;
+    font-size: 1.3em;
+    text-transform: uppercase;
 }
 
 @media all and (max-width: 1080px) {
     .contact-adress-container {
-        position:static !important;
+        position: static !important;
         width: 100%;
-
     }
 }
 
+.contact-items-container>div {
+    height: 600px;
+}
 
+.contact-tel-container:first-of-type {
+    background: #5FB4E4;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2488C2, #5FB4E4);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2488C2, #5FB4E4);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 1px 0px 15px -5px rgba(0, 0, 0, 0.75);
+}
+
+.contact-form-container:nth-child(4) {
+    background: #389CD6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #80C7EF, #389CD6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #80C7EF, #389CD6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 1px 0px 10px -5px rgba(0, 0, 0, 0.75);
+
+}
+
+.contact-tel-container {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-tel-items-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    color: #389CD6;
+    border: 1px solid #389CD6;
+    padding: 40px;
+    width: 50%;
+    margin: auto;
+
+}
+
+.contact-tel-container i {
+    font-size: 4em;
+}
+
+.contact-tel-container p {
+    font-size: 1.4em;
+    text-transform: uppercase;
+}
+
+.contact-form-container {
+    text-align: center;
+    color: #000000;
+}
+
+.contact-form-container h5 {
+    margin-top: 60px;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #389CD6;
+}
+
+
+.contact-form-container .wpcf7 {
+    margin-top: 40px;
+}
+
+.contact-form-container .wpcf7 label {
+    color: #389CD6;
+
+}
+
+.contact-form-container .wpcf7 select {
+    background-color: #ffffff;
+    color: #389CD6;
+
+}
 
 
 /* Service Single Page */
@@ -726,10 +814,7 @@ a {
 }
 
 .single-content-container img {
-
     margin: 60px;
-
-
 }
 
 .details {
