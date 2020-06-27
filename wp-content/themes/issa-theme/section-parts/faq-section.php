@@ -16,7 +16,7 @@ $title = $faq_custom_type_obj->label;
 </div>
 <div class="faq-container col-md-12">
     <!-- Accordion  -->
-    <div class="accordion" role="tablist" aria-live="polite" data-behavior="accordion">
+    <div class="accordion animate__animated animate__bounceInUp" role="tablist" aria-live="polite" data-behavior="accordion">
         <?php if ($faqs->have_posts()) : while ($faqs->have_posts()) : $faqs->the_post(); ?>
                 <article class="accordion__item js-show-item-default" data-binding="expand-accordion-item">
                     <span id="tab5" tabindex="0" class="accordion__title" aria-controls="panel5" role="tab" aria-selected="false" aria-expanded="false" data-binding="expand-accordion-trigger">

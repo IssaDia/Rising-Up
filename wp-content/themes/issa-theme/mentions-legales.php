@@ -10,7 +10,7 @@ get_header();
     <?php while (have_posts()) : the_post(); ?>
         <div class="row">
             <div class="col-md-12 single-title-container">
-                <h3 class="single-title"><?php the_title(); ?></h3>
+                <h3 class="single-title  animate__animated animate__backInRight"><?php the_title(); ?></h3>
             </div>
         </div>
         <section class="single-page-container row">

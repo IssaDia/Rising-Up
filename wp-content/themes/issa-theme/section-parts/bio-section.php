@@ -11,13 +11,14 @@ $content = str_replace(']]>', ']]&gt;', $content);
 ?>
 
 <div class="col-md-7 bio-text">
+    <h1>Mathieu Corman</h1>
     <?php if (have_rows('bio_content')) :
         while (have_rows('bio_content')) : the_row();
             $bio = get_field('bio_content'); ?>
             <?php echo $bio['bio_text']; ?>
 </div>
 <div class="col-md-5 aboutme-pic-container">
-    <img class="aboutme-pic img-fluid" src="<?php echo $bio['bio_image']['url']; ?>" alt="">
+    <img class="aboutme-pic img-fluid animate__animated animate__bounceIn" src="<?php echo $bio['bio_image']['url']; ?>" alt="">
 </div>
 <?php endwhile;
 ?>

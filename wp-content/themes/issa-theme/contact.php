@@ -17,7 +17,7 @@ $mobile_phone =  get_field('contact')['telephone'];
             <div class="col-md-12 contact-map">
                 <iframe src="<?php echo $map_url ?>" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 <div class="contact-adress-container">
-                    <div class='contact-adress-text'><?php echo $adress ?></div>
+                    <div class='contact-adress-text  animate__animated animate__backInUp'><?php echo $adress ?></div>
                 </div>
             </div>
             <div class="col-md-12 single-title-container">

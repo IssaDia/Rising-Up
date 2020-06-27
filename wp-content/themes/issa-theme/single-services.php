@@ -12,7 +12,7 @@ $details = get_field('details_tarifs');
     <?php while (have_posts()) : the_post(); ?>
         <div class="row">
             <div class="col-md-12 single-title-container">
-                <h3 class="single-title"><?php the_title(); ?></h3>
+                <h3 class="single-title  animate__animated animate__backInRight"><?php the_title(); ?></h3>
             </div>
         </div>
         <section class="single-page-container row">
@@ -40,24 +40,31 @@ $details = get_field('details_tarifs');
                     <span><?php echo $details['tarif']; ?></span>
                 </div>
             </div>
-            <div class="col-md-6 service-contact-container p-0 m-0">
-                <div class="service-contact-title">
-                    <span>Prendre rendez-vous</span>
-                </div>
 
-                <div class="service-contact-link">
-                    <a href="<?php the_permalink(); ?>">
-                        <h4>Par téléphone</h4>
-                    </a>
+            <div class="col-md-6 mx-auto card-box">
+                <div class="card card-container mx-auto service-contact-container" style="width: 34rem;height:300px">
+                    <div class="card-body">
+                        <div class="service-title">
+                            <span>Prendre rendez-vous</span>
+                        </div>
+                        <div class="service-slogan">
+                            <p><?php echo get_field('slogan_texte'); ?></p>
+                        </div>
+                        <div class="service-link">
+                            <a href="<?php the_permalink(); ?>">
+                                <h4>Contactez-nous</h4>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        <?php endwhile;  ?>
+
         </section>
+    <?php endwhile;  ?>
+<?php else : ?>
+    <!-- show 404 error here -->
+<?php endif; ?>
 
-    <?php else : ?>
-        <!-- show 404 error here -->
-    <?php endif; ?>
-
-    <?php
-    wp_reset_postdata();
-    get_footer(); ?>
+<?php
+wp_reset_postdata();
+get_footer(); ?>

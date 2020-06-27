@@ -10,29 +10,28 @@ $args = array(
 $services_custom_type_obj = get_post_type_object('services');
 $title = $services_custom_type_obj->label;
 $services = new WP_Query($args);
-
-
 ?>
 
 <?php if ($services->have_posts()) : while ($services->have_posts()) : $services->the_post(); ?>
-        <div class="col-md-6 service-container p-0 m-0">
-            <div class="service-title">
-                <span><?php the_title(); ?></span>
-            </div>
-            <div class="service-slogan">
-                <p><?php echo get_field('slogan_texte'); ?></p>
-            </div>
-
-            <div class="service-link">
-                <a href="<?php the_permalink(); ?>">
-                    <h4>Découvrir</h4>
-                </a>
+        <div class="col-md-6 mx-auto card-box">
+            <div class="card card-container mx-auto animate__animated animate__backInLeft" style="width: 34rem;height:300px">
+                <div class="card-body">
+                    <div class="service-title">
+                        <span><?php the_title(); ?></span>
+                    </div>
+                    <div class="service-slogan">
+                        <p><?php echo get_field('slogan_texte'); ?></p>
+                    </div>
+                    <div class="service-link">
+                        <a href="<?php the_permalink(); ?>">
+                            <h4>Découvrir</h4>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
+
     <?php endwhile; ?>
-
-
-
 
 <?php else : ?>
     <!-- article -->
