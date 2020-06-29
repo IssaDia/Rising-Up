@@ -14,7 +14,7 @@ $details = get_field('details_tarifs');
             <div class="col-md-12 single-title-container">
                 <h3 class="single-title  animate__animated animate__backInRight"><?php the_title(); ?></h3>
             </div>
-        </div>
+       
         <section class="single-page-container row">
             <div class="single-content-container">
                 <?php
@@ -40,7 +40,6 @@ $details = get_field('details_tarifs');
                     <span><?php echo $details['tarif']; ?></span>
                 </div>
             </div>
-
             <div class="col-md-6 mx-auto card-box">
                 <div class="card card-container mx-auto service-contact-container" style="width: 34rem;height:300px">
                     <div class="card-body">
@@ -60,6 +59,7 @@ $details = get_field('details_tarifs');
             </div>
 
         </section>
+         </div>
     <?php endwhile;  ?>
 <?php else : ?>
     <!-- show 404 error here -->

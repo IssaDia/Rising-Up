@@ -5,7 +5,9 @@
  */
 get_header();
 ?>
-<div class="row jumbotron">
+
+
+ <div class="row jumbotron">
     <?php include get_theme_file_path("section-parts/jumbotron-section.php"); ?>
 </div>
 <div class="row">
@@ -32,4 +34,6 @@ get_header();
 <div class="faq row section" id="faq">
     <?php include get_theme_file_path("section-parts/faq-section.php"); ?>
 </div>
+
+
 <?php get_footer(); ?>

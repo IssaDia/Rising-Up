@@ -10,7 +10,7 @@
 </div>
 <div class="col-md-6 mx-auto card-box">
     <div class="card card-container mx-auto" style="width: 44rem;height:600px">
-        <div class="card-body">
+        <div class="card-body mx-auto">
             <div class="service-title">
                 <h5>Nous retrouver</h5>
             </div>
