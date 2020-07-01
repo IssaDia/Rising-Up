@@ -43,7 +43,7 @@ $details = get_field('details_tarifs');
             <div class="col-md-6 mx-auto card-box">
                 <div class="card card-container mx-auto service-contact-container" style="width: 34rem;height:300px">
                     <div class="card-body">
-                        <div class="service-title">
+                        <div class="card-title">
                             <span>Prendre rendez-vous</span>
                         </div>
                         <div class="service-slogan">

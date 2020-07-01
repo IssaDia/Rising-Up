@@ -67,5 +67,11 @@ function goBack() {
   window.history.back();
 }
 
+// Js for select library
+
+jQuery(document).ready(function() {
+  $('.wpcf7-select').select2();
+});
+
 
 

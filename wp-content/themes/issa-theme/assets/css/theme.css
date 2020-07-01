@@ -14,12 +14,12 @@
 }
 
 @media screen and (max-width:1024px) {
-    .card-container {
-        width: 22rem !important;
+    .card {
+        width: 100% !important;
     }
 
-    .card-container iframe {
-        width: 260px;
+    .card iframe {
+        width: 100% !important;
 
     }
 
@@ -144,15 +144,15 @@ body {
     height: inherit;
     color: #fff;
     height: 100%;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 .jumbotronHeader {
-    margin-bottom: 15px;
-    margin-top: 250px;
-    margin-left: 100px;
+    top: 40%;
+    left: 10%;
     display: flex;
     align-items: flex-start;
+    position: absolute;
 }
 
 .jumbotronCategory {
@@ -189,59 +189,66 @@ body {
     margin-top: 20px;
 }
 
+.jumbotronBody span {
+    font-size: 26px;
+}
 
 /* Services */
 
-.card-container {
-    margin: 0 auto;
+.card {
+    margin: auto !important;
+    margin-bottom: 40px !important;
     text-align: center;
-    padding-bottom: 40px;
 }
 
-.card-box:nth-child(2)>.card-container {
+.card-body {
+    padding: 0 !important;
+    margin: 0 auto;
+}
 
-    background: #5FB4E4;
+.card:nth-child(2) {
+
+    background: #5FB4E4 !important;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2488C2, #5FB4E4);
+    background: -webkit-linear-gradient(to right, #2488C2, #5FB4E4) !important;
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2488C2, #5FB4E4);
+    background: linear-gradient(to right, #2488C2, #5FB4E4) !important;
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    box-shadow: 1px 0px 15px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 0px 15px -5px rgba(0, 0, 0, 0.75) !important;
 }
 
-.card-box:first-of-type>.card-container {
-    background: #80C7EF;
+.card:first-of-type {
+    background: #80C7EF !important;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #389CD6, #80C7EF);
+    background: -webkit-linear-gradient(to right, #389CD6, #80C7EF) !important;
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #389CD6, #80C7EF);
+    background: linear-gradient(to right, #389CD6, #80C7EF) !important;
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    box-shadow: 1px 0px 15px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 0px 15px -5px rgba(0, 0, 0, 0.75) !important;
 }
 
 
-.card-container p {
+.card p {
     color: #ffffff;
     font-size: 1, 5em;
     text-align: center;
 
 }
 
-.card-container iframe {
+.card iframe {
     margin-bottom: 40px;
     text-align: center;
 
 }
 
-.service-title {
-    margin-top: 40px;
+.card-title {
     text-align: center;
 }
 
 .service-slogan p {
     color: #ffffff;
     font-size: 1.1em;
-    margin: 0.85em 0;
+    margin: 40px 10px;
     text-align: center;
 }
 
@@ -271,22 +278,45 @@ body {
     color: #e1e1e1;
 }
 
-.service-title span {
-    font-size: 18px;
+.card-title h2,
+.card-title span {
+    margin-top: 60px !important;
+    font-size: 18px !important;
     line-height: 1.1em;
-    margin-bottom: 4px;
-    font-weight: lighter;
+    font-weight: lighter !important;
     text-transform: uppercase;
     color: #ffffff;
+    font-weight: bold;
 }
+
+.card-title h5 {
+    font-size: 18px !important;
+    line-height: 1.1em;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+
+}
+
 
 
 /* Aout Me */
 
 
 .bio-text {
-    padding: 80px;
+
+    padding: 80px !important;
 }
+
+
+
+.bio-title {
+
+    padding-left: 0 !important;
+}
+
+
+
 
 .bio-text li {
     list-style: square !important;
@@ -301,8 +331,14 @@ body {
     color: #23689E;
 }
 
+.bio-text span {
+    font-size: 3em;
+    font-weight: bold;
+    
+}
+
 .aboutme-pic-container {
-    margin-top: 160px;
+    margin-top: 200px;
     padding-left: 80px;
     text-align: center;
 }
@@ -319,8 +355,27 @@ body {
     .aboutme-pic {
         display: block;
         margin: 0 auto;
+        height: 50%;
+        width: 50%;
 
     }
+
+    .aboutme-pic-container {
+        margin-top: 20px;
+       
+    }
+
+    .bio-text  {
+        padding: 15px !important;
+        
+    }
+
+    .bio-text span {
+        font-size: 2em;
+        font-weight: bold;
+        
+    }
+
 }
 
 /* FAQ */
@@ -408,10 +463,10 @@ body {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     box-shadow: 1px 0px 15px -5px rgba(0, 0, 0, 0.75);
     padding: 20px;
-    text-align: center;
+
 }
 
-.card-container h5 {
+.card h5 {
     color: #ffffff;
     font-size: 2em;
     margin: 40px;
@@ -422,7 +477,7 @@ body {
     color: #ffffff;
 }
 
-.card-container .wpcf7-form>p>label>span>input,
+.card .wpcf7-form>p>label>span>input,
 textarea {
     border-bottom: 1px solid #ffffff !important;
 }
@@ -1069,13 +1124,11 @@ a {
 
 .single-content-container img {
     background-repeat: no-repeat;
-    background-position: bottom;
-    object-fit: contain;
+    background-size: 100% 100%;
     border-radius: 50%;
     box-shadow: 1px 0px 10px -5px rgba(0, 0, 0, 0.75);
-    margin: 60px;
-    width: 300px;
-    height: 300px;
+    margin-bottom: 60px;
+  
 }
 
 @media screen and (max-width:824px) {
@@ -1127,7 +1180,7 @@ a {
     font-weight: 100;
 }
 
-.error404-container h1 {
+.error404-container span {
     text-align: center;
     font-size: 15em;
     font-weight: 100;

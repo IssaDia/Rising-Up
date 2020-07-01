@@ -8,7 +8,7 @@ $logo = $image[0]; ?>
 <footer class="footer-distributed row">
     <div class="col-md-4 footer-left">
         <h5>RISING UP</h5>
-        <img src="<?php echo $logo ?>"></img>
+        <img src="<?php echo $logo ?>" alt="logo de Rising Up, site du kinésithérapeuthe de Tourcoing, Mathieu Corman"></img>
     </div>
     <div class="col-md-4 footer-center">
         <h5>L'ADRESSE DU CABINET</h5>

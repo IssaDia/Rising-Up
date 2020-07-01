@@ -13,11 +13,11 @@ $services = new WP_Query($args);
 ?>
 
 <?php if ($services->have_posts()) : while ($services->have_posts()) : $services->the_post(); ?>
-        <div class="col-md-6 mx-auto card-box">
-            <div class="card card-container mx-auto animate__animated animate__backInLeft" style="width: 34rem;height:300px">
+        <div class="col-md-6">
+            <div class="card mx-auto animate__animated animate__backInLeft" style="width: 34rem;height:300px">
                 <div class="card-body">
-                    <div class="service-title">
-                        <span><?php the_title(); ?></span>
+                    <div class="card-title">
+                        <h2><?php the_title(); ?></h2>
                     </div>
                     <div class="service-slogan">
                         <p><?php echo get_field('slogan_texte'); ?></p>

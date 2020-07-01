@@ -49,6 +49,8 @@ function cmb_get_image_id($image_src)
     return $image[0]; //return the image ID
 }
 
+
+
 function services_custom_type()
 {
 
@@ -120,3 +122,37 @@ function wpc_dashicons()
     wp_enqueue_style('dashicons');
 }
 add_action('wp_enqueue_scripts', 'wpc_dashicons');
+
+
+
+function citations_custom_type()
+{
+
+    register_post_type(
+        'citations',
+
+        array(
+            'labels' => array(
+                'name' => __('Citation'),
+                'singular_name' => __('Citation'),
+                'menu_name' => 'Citations',
+                'add_new_item'        => __('Ajouter une nouvelle citation'),
+                'add_new'             => __('Ajouter une nouvelle'),
+            ),
+            'hierarchical' => false,
+            'supports' => array(
+                'title',
+                'editor',
+                'page-attributes'
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'citations', "with_front" => false),
+
+
+
+        )
+    );
+}
+
+add_action('init', 'citations_custom_type');
