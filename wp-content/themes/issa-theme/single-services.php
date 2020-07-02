@@ -13,20 +13,21 @@ $details = get_field('details_tarifs');
         <div class="row">
             <div class="col-md-12 single-title-container">
                 <h3 class="single-title  animate__animated animate__backInRight"><?php the_title(); ?></h3>
+
             </div>
-       
-        <section class="single-page-container row">
-            <div class="single-content-container">
-                <?php
-                if (has_post_thumbnail()) {
-                    echo '<div class="col-md-12">';
-                    the_post_thumbnail('thumbnail');
-                    echo '</div>';
-                }
-                ?>
-                <div class="col-md-12 single-text">
-                    <?php the_content(); ?>
-                </div>
+            
+                <div class="single-content-container">
+                    <?php
+                    if (has_post_thumbnail()) {
+                        echo '<div class="col-md-12">';
+                        the_post_thumbnail('thumbnail');
+                        echo '</div>';
+                    }
+                    ?>
+                    <div class="col-md-12 single-text">
+                        <?php the_content(); ?>
+                    </div>
+              
             </div>
             <div class="separation col-md-12"></div>
             <div class="col-md-6 details">
@@ -40,8 +41,8 @@ $details = get_field('details_tarifs');
                     <span><?php echo $details['tarif']; ?></span>
                 </div>
             </div>
-            <div class="col-md-6 mx-auto card-box">
-                <div class="card card-container mx-auto service-contact-container" style="width: 34rem;height:300px">
+            <div class="col-md-6">
+                <div class="card mx-auto" style="width: 34rem;height:300px">
                     <div class="card-body">
                         <div class="card-title">
                             <span>Prendre rendez-vous</span>
@@ -50,7 +51,7 @@ $details = get_field('details_tarifs');
                             <p><?php echo get_field('slogan_texte'); ?></p>
                         </div>
                         <div class="service-link">
-                            <a href="<?php the_permalink(); ?>">
+                            <a href="http://localhost/mattproject/contact">
                                 <h4>Contactez-nous</h4>
                             </a>
                         </div>
@@ -58,8 +59,8 @@ $details = get_field('details_tarifs');
                 </div>
             </div>
 
-        </section>
-         </div>
+
+        </div>
     <?php endwhile;  ?>
 <?php else : ?>
     <!-- show 404 error here -->

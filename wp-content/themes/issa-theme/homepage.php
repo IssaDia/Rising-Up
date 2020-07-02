@@ -6,34 +6,30 @@
 get_header();
 ?>
 
-
- <div class="row jumbotron">
+ <section class="row jumbotron">
     <?php include get_theme_file_path("section-parts/jumbotron-section.php"); ?>
-</div>
-<div class="row">
-    <div class="separation col-md-12"></div>
-</div>
-<div class="services row section">
+</section>
+<section class="services row section">
     <?php include get_theme_file_path("section-parts/services-section.php"); ?>
-</div>
-<div class="row">
-    <div class="separation col-md-12"></div>
-</div>
-<div class="bio row section">
+</section>
+<section class="row">
+    <section class="separation col-md-12"></section>
+</section>
+<section class="bio row section">
     <?php include get_theme_file_path("section-parts/bio-section.php"); ?>
-</div>
-<div class="row">
-    <div class="separation col-md-12"></div>
-</div>
-<div class="contact row section" id="contact">
+</section>
+<section class="row">
+    <section class="separation col-md-12"></section>
+</section>
+<section class="contact row section" id="contact">
     <?php include get_theme_file_path("section-parts/contact-section.php"); ?>
-</div>
-<div class="row">
-    <div class="separation col-md-12"></div>
-</div>
-<div class="faq row section" id="faq">
+</section>
+<section class="row">
+    <section class="separation col-md-12"></section>
+</section>
+<section class="faq row section" id="faq">
     <?php include get_theme_file_path("section-parts/faq-section.php"); ?>
-</div>
+</section>
 
 
 <?php get_footer(); ?>

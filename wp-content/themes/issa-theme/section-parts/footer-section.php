@@ -2,9 +2,7 @@
 $custom_logo_id = get_theme_mod('custom_logo');
 $image = wp_get_attachment_image_src($custom_logo_id, 'full');
 $logo = $image[0]; ?>
-<div class="row">
-    <div class="separation col-md-12"></div>
-</div>
+
 <footer class="footer-distributed row">
     <div class="col-md-4 footer-left">
         <h5>RISING UP</h5>
