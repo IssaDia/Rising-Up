@@ -4,77 +4,23 @@
     box-sizing: border-box;
 }
 
-.container {
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
 .row {
     margin-bottom: 0 !important;
 }
 
-@media screen and (max-width:1024px) {
-    .card {
-        width: 100% !important;
-    }
-
-    .card iframe {
-        width: 100% !important;
-
-    }
-
-    .container-fluid {
-        max-width: 100%;
-        width: 100%;
-    }
-
-}
-
-
-
-
-
-h2 {
-    margin-top: 20px !important;
-    font-size: 1em !important;
-}
-
 html,
 body {
-    height: 100%;
-    min-height: 100%;
-    max-height: 100%;
     font-family: 'Open Sans', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
-    padding-top: 30px;
 }
-
 
 .section {
     padding: 0 !important;
-    margin: 80px auto !important;
+    margin: 60px auto !important;
 }
-
-
-/* TITLE */
-
-.title {
-    text-align: center !important;
-    margin-bottom: 60px;
-    margin-top: 40px;
-
-}
-
-.title-text {
-    font-size: 3em !important;
-    padding-bottom: 40px;
-    text-align: center !important;
-}
-
 
 /* NAVBAR */
 
 .navbar {
-
     background: #2488C2;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #5FB4E4, #2488C2);
@@ -82,11 +28,6 @@ body {
     background: linear-gradient(to right, #5FB4E4, #2488C2);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     box-shadow: 1px 0px 10px -5px rgba(0, 0, 0, 0.75);
-    padding: 20px;
-}
-
-.navbar-toggler {
-    margin-bottom: 20px;
 }
 
 .navbar-brand {
@@ -94,7 +35,9 @@ body {
     --animate-delay: 5.9s;
 }
 
-
+nav ul li.active {
+    background-color: transparent !important;
+}
 
 .nav-link {
     color: #ffffff !important;
@@ -128,35 +71,30 @@ body {
     background-color: #5FB4E4 !important;
 }
 
-
-
 /* Juùmbotron */
 
 .jumbotron {
-    background-image: url(../images/massage-background.jpg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url(../images/jumbotron2.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
-    overflow: hidden;
-    margin-bottom: 0 !important;
-    margin-top: 0 !important;
     padding-top: 0;
     padding-bottom: 0;
     height: inherit;
     color: #fff;
     height: 100%;
-    opacity: 0.8;
 }
 
-.jumbotronHeader {
-    top: 40%;
-    left: 10%;
+.jumbotron-box {
+    top: 70%;
+
     display: flex;
     align-items: flex-start;
     position: absolute;
+
 }
 
-.jumbotronCategory {
+.jumbotron-brand {
     display: block;
     position: relative;
     padding-left: 25px;
@@ -164,7 +102,7 @@ body {
     line-height: 20px;
 }
 
-.jumbotronCategory::before {
+.jumbotron-brand::before {
     content: "";
     display: block;
     position: absolute;
@@ -176,46 +114,31 @@ body {
 }
 
 
-.jumbotronContainerBefore {
+.jumbotron-line {
     display: block;
     left: 0;
     top: 0;
-    height: 120px;
+    height: 100px;
     width: 5px;
     background-color: #2488C2;
 }
 
-.jumbotronBody {
-    margin-left: 40px;
-    margin-top: 20px;
+.jumbotron-content {
+    margin-left: 20px;
+    margin-top: 10px;
+
 }
 
-.jumbotronBody span {
+.jumbotron-content span {
     font-size: 26px;
 }
 
-/* Services */
+/* Therapies */
 
-.card {
-    margin: auto !important;
-    margin-bottom: 40px !important;
-    text-align: center;
-}
 
 .card-body {
-    padding: 0 !important;
+    padding: 10px !important;
     margin: 40px 30px;
-}
-
-.card:nth-child(2) {
-
-    background: #5FB4E4 !important;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2488C2, #5FB4E4) !important;
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2488C2, #5FB4E4) !important;
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    box-shadow: 1px 0px 15px -5px rgba(0, 0, 0, 0.75) !important;
 }
 
 .card:first-of-type {
@@ -228,60 +151,62 @@ body {
     box-shadow: 1px 0px 15px -5px rgba(0, 0, 0, 0.75) !important;
 }
 
+.card:nth-child(2) {
+    background: #5FB4E4 !important;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2488C2, #5FB4E4) !important;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2488C2, #5FB4E4) !important;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 1px 0px 15px -5px rgba(0, 0, 0, 0.75) !important;
+}
+
+
 
 .card p {
     color: #ffffff;
-    font-size: 1, 5em;
-    text-align: center;
-
+    font-size: 1, 3em;
 }
 
-.card iframe {
-    margin-bottom: 40px;
-    text-align: center;
-
+.card .embed-responsive {
+    margin-bottom: 20px;
 }
 
-.card-title {
-    text-align: center;
-}
-
-.service-slogan p {
+.therapie-texte p {
     color: #ffffff;
-    font-size: 1.1em;
+    font-size: 1.2em;
     margin: 40px 10px;
-    text-align: center;
+
 }
 
-.service-link h4 {
+.therapie-link h4 {
     border: 3px solid #fff;
     width: 200px !important;
-    background: transparent;
+
     font-size: 1em;
     padding: 12px 16px 10px;
     color: #ffffff;
-    margin: 40px auto;
-
-
-}
-
-.service-link a {
-    text-decoration: none !important;
-    display: block;
     text-align: center;
 
+
 }
 
-.service-link h4:hover {
+.therapie-link a {
+    text-decoration: none !important;
+    display: block;
+    float: right;
+
+}
+
+.therapie-link h4:hover {
 
     border: 3px solid #e1e1e1;
-
     color: #e1e1e1;
 }
 
 .card-title h2,
 .card-title span {
-    font-size: 18px !important;
+    font-size: 1.2em !important;
     line-height: 1.1em;
     font-weight: lighter !important;
     text-transform: uppercase;
@@ -295,27 +220,26 @@ body {
     text-transform: uppercase;
     color: #ffffff;
     font-weight: bold;
-
+    text-align: center;
 }
-
-
 
 /* Aout Me */
 
-
 .bio-text {
-
-    padding: 80px !important;
+    padding: 0 80px !important;
 }
 
-
+.bio-text h2 {
+    margin-top: 40px !important;
+    font-size: 1em !important;
+    font-weight: bold;
+    color: #23689E;
+}
 
 .bio-title {
 
     padding-left: 0 !important;
 }
-
-
 
 
 .bio-text li {
@@ -326,66 +250,33 @@ body {
     margin-left: 30px;
 }
 
-.bio-text h2 {
-    font-weight: bold;
-    color: #23689E;
-}
 
 .bio-text span {
     font-size: 3em;
     font-weight: bold;
-    
+
 }
 
 .aboutme-pic-container {
-    margin-top: 200px;
-    padding-left: 80px;
-    text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 .aboutme-pic {
-    width: 350px;
-    height: 300px;
     border-radius: 50%;
     padding: 10px;
-    box-shadow: 0 0 100px #999999;
-}
-
-@media all and (max-width: 480px) {
-    .aboutme-pic {
-        display: block;
-        margin: 0 auto;
-        height: 50%;
-        width: 50%;
-
-    }
-
-    .aboutme-pic-container {
-        margin-top: 20px;
-       
-    }
-
-    .bio-text  {
-        padding: 15px !important;
-        
-    }
-
-    .bio-text span {
-        font-size: 2em;
-        font-weight: bold;
-        
-    }
-
+    box-shadow: 0 0 50px #999999;
 }
 
 /* FAQ */
 
-.faq-container {
+.faq .title {
+    text-align: center !important;
+    font-size: 2.5em !important;
+    text-transform: uppercase;
 
-    margin: 0 auto;
-    padding: 0 1.5rem;
 }
-
 
 .accordion__item {
     border-bottom: 1px solid #dce7eb;
@@ -430,13 +321,10 @@ body {
     border-top: 6px solid #2488C2;
     line-height: 1.6;
     box-shadow: 5px 5px 10px 0px #a4bac1;
-
-
 }
 
 .is-expanded {
     content: "\f056";
-
 }
 
 .is-expanded .accordion__title:before {
@@ -454,24 +342,15 @@ body {
 }
 
 /* Form */
-.form-container {
-    background: #2488C2;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #5FB4E4, #2488C2);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #5FB4E4, #2488C2);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    box-shadow: 1px 0px 15px -5px rgba(0, 0, 0, 0.75);
-    padding: 20px;
-
-}
 
 .card h5 {
     color: #ffffff;
     font-size: 2em;
-    margin: 40px;
+    margin-bottom: 30px;
 }
-
+.wpcf7  {
+    padding-left: 50px;
+}
 .wpcf7 label {
     font-size: 1.2em;
     color: #ffffff;
@@ -506,9 +385,8 @@ textarea {
 .footer-distributed {
 
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-    box-sizing: border-box;
-    text-align: left;
-    background-color: bisque;
+    margin-top: 40px;
+
 }
 
 .separation::before {
@@ -733,20 +611,6 @@ a {
 
 }
 
-
-/* Map HomePage */
-
-
-
-@media all and (max-width: 500px) {
-    .map-container iframe {
-        width: 80%;
-        height: 260px;
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
-}
-
 /*  Contact Page */
 
 .contact-container {
@@ -788,37 +652,7 @@ a {
     text-transform: uppercase;
 }
 
-@media all and (max-width: 1080px) {
-    .contact-adress-container {
-        position: static !important;
-        width: 100%;
-    }
 
-    .contact-tel-container:first-of-type {
-        display: none;
-    }
-
-    .contact-tel-items-container {
-        width: 80% !important;
-    }
-
-    .contact-form-container:nth-child(4) {
-        display: none;
-    }
-
-    .contact-map {
-        margin-bottom: 0;
-    }
-
-    .contact-form-container .wpcf7 {
-        margin-top: 0 !important;
-    }
-
-    .contact-items-container>div {
-        height: 90% !important;
-    }
-
-}
 
 .contact-items-container>div {
     height: 600px;
@@ -916,38 +750,6 @@ a {
     margin-bottom: 40px;
     padding: 40px !important;
 }
-
-@media screen and (max-width:960px) {
-    .details {
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .details h3 {
-        font-size: 1.5em !important;
-        width: 100%;
-        text-align: center;
-    }
-
-    .detail-duree,
-    .detail-tarif {
-        width: 200px !important;
-    }
-
-    .detail-duree h4,
-    .detail-tarif h4 {
-        font-size: 1em;
-    }
-
-
-    .details span {
-        font-size: 1em !important;
-    }
-}
-
 
 
 .details span {
@@ -1068,11 +870,6 @@ a {
     margin-bottom: 40px;
 }
 
-@media screen and (max-width:1024px) {
-    .single-title {
-        font-size: 2em;
-    }
-}
 
 .single-text {
     color: #22689e;
@@ -1081,7 +878,7 @@ a {
 
 .single-text>p>a {
     color: #22689e !important;
-   
+
 }
 
 .single-text ul {
@@ -1122,19 +919,9 @@ a {
     background-size: cover;
     box-shadow: 1px 0px 10px -5px rgba(0, 0, 0, 0.75);
     margin-bottom: 60px;
-    width: 300px;
-    height: 200px;
-  
+
+
 }
-
-@media screen and (max-width:824px) {
-    .single-content-container img {
-
-        width: 200px;
-        height: 200px;
-    }
-}
-
 
 
 /* 404 Page */
@@ -1183,3 +970,162 @@ a {
     text-shadow: #0062cc 1px 1px, #0062cc 2px 2px, #0062cc 3px 3px, #0062cd 4px 4px, #0062cd 5px 5px, #0062cd 6px 6px, #0062cd 7px 7px, #0062ce 8px 8px, #0063ce 9px 9px, #0063ce 10px 10px, #0063ce 11px 11px, #0063cf 12px 12px, #0063cf 13px 13px, #0063cf 14px 14px, #0063cf 15px 15px, #0063d0 16px 16px, #0064d0 17px 17px, #0064d0 18px 18px, #0064d0 19px 19px, #0064d1 20px 20px, #0064d1 21px 21px, #0064d1 22px 22px, #0064d1 23px 23px, #0064d2 24px 24px, #0065d2 25px 25px, #0065d2 26px 26px, #0065d2 27px 27px, #0065d3 28px 28px, #0065d3 29px 29px, #0065d3 30px 30px, #0065d3 31px 31px, #0065d4 32px 32px, #0065d4 33px 33px, #0066d4 34px 34px, #0066d4 35px 35px, #0066d5 36px 36px, #0066d5 37px 37px, #0066d5 38px 38px, #0066d5 39px 39px, #0066d6 40px 40px, #0066d6 41px 41px, #0067d6 42px 42px, #0067d6 43px 43px, #0067d7 44px 44px, #0067d7 45px 45px, #0067d7 46px 46px, #0067d7 47px 47px, #0067d8 48px 48px, #0067d8 49px 49px, #0068d8 50px 50px, #0068d9 51px 51px, #0068d9 52px 52px, #0068d9 53px 53px, #0068d9 54px 54px, #0068da 55px 55px, #0068da 56px 56px, #0068da 57px 57px, #0068da 58px 58px, #0069db 59px 59px, #0069db 60px 60px, #0069db 61px 61px, #0069db 62px 62px, #0069dc 63px 63px, #0069dc 64px 64px, #0069dc 65px 65px, #0069dc 66px 66px, #006add 67px 67px, #006add 68px 68px, #006add 69px 69px, #006add 70px 70px, #006ade 71px 71px, #006ade 72px 72px, #006ade 73px 73px, #006ade 74px 74px, #006bdf 75px 75px, #006bdf 76px 76px, #006bdf 77px 77px, #006bdf 78px 78px, #006be0 79px 79px, #006be0 80px 80px, #006be0 81px 81px, #006be0 82px 82px, #006be1 83px 83px, #006ce1 84px 84px, #006ce1 85px 85px, #006ce1 86px 86px, #006ce2 87px 87px, #006ce2 88px 88px, #006ce2 89px 89px, #006ce2 90px 90px, #006ce3 91px 91px, #006de3 92px 92px, #006de3 93px 93px, #006de3 94px 94px, #006de4 95px 95px, #006de4 96px 96px, #006de4 97px 97px, #006de4 98px 98px, #006de5 99px 99px, #006ee5 100px 100px, #006ee5 101px 101px, #006ee6 102px 102px, #006ee6 103px 103px, #006ee6 104px 104px, #006ee6 105px 105px, #006ee7 106px 106px, #006ee7 107px 107px, #006ee7 108px 108px, #006fe7 109px 109px, #006fe8 110px 110px, #006fe8 111px 111px, #006fe8 112px 112px, #006fe8 113px 113px, #006fe9 114px 114px, #006fe9 115px 115px, #006fe9 116px 116px, #0070e9 117px 117px, #0070ea 118px 118px, #0070ea 119px 119px, #0070ea 120px 120px, #0070ea 121px 121px, #0070eb 122px 122px, #0070eb 123px 123px, #0070eb 124px 124px, #0071eb 125px 125px, #0071ec 126px 126px, #0071ec 127px 127px, #0071ec 128px 128px, #0071ec 129px 129px, #0071ed 130px 130px, #0071ed 131px 131px, #0071ed 132px 132px, #0071ed 133px 133px, #0072ee 134px 134px, #0072ee 135px 135px, #0072ee 136px 136px, #0072ee 137px 137px, #0072ef 138px 138px, #0072ef 139px 139px, #0072ef 140px 140px, #0072ef 141px 141px, #0073f0 142px 142px, #0073f0 143px 143px, #0073f0 144px 144px, #0073f0 145px 145px, #0073f1 146px 146px, #0073f1 147px 147px, #0073f1 148px 148px, #0073f1 149px 149px, #0074f2 150px 150px, #0074f2 151px 151px, #0074f2 152px 152px, #0074f3 153px 153px, #0074f3 154px 154px, #0074f3 155px 155px, #0074f3 156px 156px, #0074f4 157px 157px, #0074f4 158px 158px, #0075f4 159px 159px, #0075f4 160px 160px, #0075f5 161px 161px, #0075f5 162px 162px, #0075f5 163px 163px, #0075f5 164px 164px, #0075f6 165px 165px, #0075f6 166px 166px, #0076f6 167px 167px, #0076f6 168px 168px, #0076f7 169px 169px, #0076f7 170px 170px, #0076f7 171px 171px, #0076f7 172px 172px, #0076f8 173px 173px, #0076f8 174px 174px, #0077f8 175px 175px, #0077f8 176px 176px, #0077f9 177px 177px, #0077f9 178px 178px, #0077f9 179px 179px, #0077f9 180px 180px, #0077fa 181px 181px, #0077fa 182px 182px, #0077fa 183px 183px, #0078fa 184px 184px, #0078fb 185px 185px, #0078fb 186px 186px, #0078fb 187px 187px, #0078fb 188px 188px, #0078fc 189px 189px, #0078fc 190px 190px, #0078fc 191px 191px, #0079fc 192px 192px, #0079fd 193px 193px, #0079fd 194px 194px, #0079fd 195px 195px, #0079fd 196px 196px, #0079fe 197px 197px, #0079fe 198px 198px, #0079fe 199px 199px, #007aff 200px 200px;
 }
 
+
+/* Media Queries */
+
+
+@media screen and (max-width:640px) {
+
+    /* Navbar Menu  */
+    .navbar-nav {
+        background: #2488C2;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #5FB4E4, #2488C2);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #5FB4E4, #2488C2);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        margin-top: 20px;
+    }
+
+    .nav-link {
+        margin-left: 20px;
+        font-size: 1.2em;
+    }
+
+    /* Jumbotron  */
+
+    .jumbotronHeader {
+        top: 10%;
+        left: 0%;
+    }
+
+    .jumbotronContainerBefore {
+        display: none;
+    }
+
+
+    /* Card container */
+
+    .jumbotronBody p {
+        font-size: 0.8em;
+    }
+
+    .card {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    /* Card title Therapy */
+
+    .card-title h2,
+    .card-title span {
+        font-size: 0.6em !important;
+        font-weight: bold !important;
+    }
+
+    /* Card Map */
+    .card>div>iframe {
+        width: 300px !important;
+
+    }
+
+    /* Media Queries */
+
+    .aboutme-pic {
+        display: block;
+        margin: 0 auto;
+        height: 70%;
+        width: 70%;
+    }
+
+    .aboutme-pic-container {
+        margin-top: 40px;
+    }
+
+    .bio-text {
+        padding: 15px !important;
+    }
+
+    .bio-text span {
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    .map-container iframe {
+        width: 80%;
+        height: 260px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .contact-adress-container {
+        position: static !important;
+        width: 100%;
+    }
+
+    .contact-tel-container:first-of-type {
+        display: none;
+    }
+
+    .contact-tel-items-container {
+        width: 80% !important;
+    }
+
+    .contact-form-container:nth-child(4) {
+        display: none;
+    }
+
+    .contact-map {
+        margin-bottom: 0;
+    }
+
+    .contact-form-container .wpcf7 {
+        margin-top: 0 !important;
+    }
+
+    .contact-items-container>div {
+        height: 90% !important;
+    }
+
+    .single-text iframe {
+        width: 80%;
+    }
+
+    .details {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .details h3 {
+        font-size: 1.5em !important;
+        width: 100%;
+        text-align: center;
+    }
+
+    .detail-duree,
+    .detail-tarif {
+        width: 200px !important;
+    }
+
+    .detail-duree h4,
+    .detail-tarif h4 {
+        font-size: 1em;
+    }
+
+
+    .details span {
+        font-size: 1em !important;
+    }
+
+    .single-title {
+        font-size: 2em;
+    }
+
+    .single-content-container img {
+        width: 200px;
+        height: 200px;
+    }
+}

@@ -91,7 +91,7 @@ function faq_custom_type()
 
         array(
             'labels' => array(
-                'name' => __('Questions Fréquentes'),
+                'name' => __('Faq'),
                 'singular_name' => __('Question'),
                 'menu_name' => 'Questions Fréquentes',
                 'add_new_item'        => __('Ajouter une nouvelle question'),

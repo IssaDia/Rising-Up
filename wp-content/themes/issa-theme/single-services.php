@@ -43,12 +43,9 @@ $details = get_field('details_tarifs');
             </div>
             <div class="col-md-6">
                 <div class="card mx-auto" style="width: 34rem;height:300px">
-                    <div class="card-body">
+                    <div class="card-body" style="margin-top: 100px;">
                         <div class="card-title">
-                            <span>Prendre rendez-vous</span>
-                        </div>
-                        <div class="service-slogan">
-                            <p><?php echo get_field('slogan_texte'); ?></p>
+                            <span >Prendre rendez-vous?</span>
                         </div>
                         <div class="service-link">
                             <a href="http://localhost/mattproject/contact">

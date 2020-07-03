@@ -33,8 +33,12 @@
     ?>
 
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-      <a class="navbar-brand animate__animated animate__bounce" href="/"><img src="<?php echo $logo ?>" alt="logo de Rising Up, site du kinésithérapeuthe de Tourcoing, Mathieu Corman"></img></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand animate__animated animate__bounce" href="/"> <?php if ($logo) :  ?>
+          <img src="<?php echo $logo ?>" alt="logo de Rising Up, site du kinésithérapeuthe de Tourcoing, Mathieu Corman"></img>
+        <?php else : null  ?>
+
+        <?php endif ?></a>
+      <button class="navbar-toggler toggle-menu" type="button" data-toggle="collapse" data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <?php

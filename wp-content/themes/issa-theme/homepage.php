@@ -10,7 +10,7 @@ get_header();
     <?php include get_theme_file_path("section-parts/jumbotron-section.php"); ?>
 </section>
 <section class="services row section">
-    <?php include get_theme_file_path("section-parts/services-section.php"); ?>
+    <?php include get_theme_file_path("section-parts/therapies-section.php"); ?>
 </section>
 <section class="row">
     <section class="separation col-md-12"></section>

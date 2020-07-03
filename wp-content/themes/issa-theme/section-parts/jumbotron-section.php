@@ -1,9 +1,8 @@
-
-    <div class="jumbotronHeader col-md-12">
-        <div class="jumbotronContainerBefore" id="jumbotronContainerBefore"></div>
-        <div class="jumbotronBody" id="jumbotronBody">
-            <small class="jumbotronCategory" id="jumbotronCategory">RISING UP</small>
-            <span class="jumbotronTitle" id="jumbotronTitle">MATHIEU CORMAN</span>
-            <h1>Kinésithérapeuthe à Tourcoing</h1>
-        </div>
+<div class="jumbotron-box col-md-12">
+    <div class="jumbotron-line"></div>
+    <div class="jumbotron-content">
+        <small class="jumbotron-brand">RISING UP</small>
+        <span class="jumbotronTitle">MATHIEU CORMAN</span>
+        <p>Un voyage initiatique au service de votre santé</p>
     </div>
+</div>

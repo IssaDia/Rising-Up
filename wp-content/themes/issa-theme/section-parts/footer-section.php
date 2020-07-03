@@ -1,12 +1,19 @@
 <?php $id = 134;
 $custom_logo_id = get_theme_mod('custom_logo');
 $image = wp_get_attachment_image_src($custom_logo_id, 'full');
-$logo = $image[0]; ?>
+$logo = $image[0];
+
+?>
+
 
 <footer class="footer-distributed row">
     <div class="col-md-4 footer-left">
         <h5>RISING UP</h5>
-        <img src="<?php echo $logo ?>" alt="logo de Rising Up, site du kinésithérapeuthe de Tourcoing, Mathieu Corman"></img>
+        <?php if ($logo) :  ?>
+            <img src="<?php echo $logo ?>" alt="logo de Rising Up, site du kinésithérapeuthe de Tourcoing, Mathieu Corman"></img>
+        <?php else : ?> <div style="height: 70px;"></div>
+
+        <?php endif ?>
     </div>
     <div class="col-md-4 footer-center">
         <h5>L'ADRESSE DU CABINET</h5>
