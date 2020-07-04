@@ -1,5 +1,5 @@
 <div class="col-md-6">
-    <div class="card" style="width: 44rem;height:600px">
+    <div class="card mx-auto" style="width: 44rem;height:600px">
         <div class="card-body">
             <div class="card-title">
                 <h5>Nous contacter</h5>
@@ -9,7 +9,7 @@
     </div>
 </div>
 <div class="col-md-6">
-    <div class="card" style="width: 44rem;height:600px">
+    <div class="card mx-auto" style="width: 44rem;height:600px">
         <div class="card-body">
             <div class="card-title">
                 <h5>Nous retrouver</h5>

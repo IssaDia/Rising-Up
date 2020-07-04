@@ -43,12 +43,12 @@ $details = get_field('details_tarifs');
             </div>
             <div class="col-md-6">
                 <div class="card mx-auto" style="width: 34rem;height:300px">
-                    <div class="card-body" style="margin-top: 100px;">
+                    <div class="card-body" style="margin-top: 80px;">
                         <div class="card-title">
-                            <span >Prendre rendez-vous?</span>
+                            <span >Prendre rendez-vous</span>
                         </div>
-                        <div class="service-link">
-                            <a href="http://localhost/mattproject/contact">
+                        <div class="therapie-link" style="margin-top: 40px;">
+                            <a style="float:left" href="http://localhost/mattproject/contact">
                                 <h4>Contactez-nous</h4>
                             </a>
                         </div>

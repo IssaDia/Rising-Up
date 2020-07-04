@@ -13,7 +13,7 @@ $services = new WP_Query($args);
 ?>
 
 <?php if ($services->have_posts()) : while ($services->have_posts()) : $services->the_post(); ?>
-        <div class="col-md-6">
+        <div class="col-md-6  mx-auto">
             <div class="card mx-auto animate__animated animate__backInLeft" style="width: 34rem;height:450px">
                 <div class="card-body">
                     <div class="card-title">
