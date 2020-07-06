@@ -12,22 +12,22 @@ $details = get_field('details_tarifs');
     <?php while (have_posts()) : the_post(); ?>
         <div class="row">
             <div class="col-md-12 single-title-container">
-                <h2 class="single-title  animate__animated animate__backInRight"><?php the_title(); ?></h2>
+                <h2 class="single-title  animate__animated animate__backInLeft"><?php the_title(); ?></h2>
 
             </div>
-            
-                <div class="single-content-container">
-                    <?php
-                    if (has_post_thumbnail()) {
-                        echo '<div class="col-md-12">';
-                        the_post_thumbnail('thumbnail');
-                        echo '</div>';
-                    }
-                    ?>
-                    <div class="col-md-12 single-text">
-                        <?php the_content(); ?>
-                    </div>
-              
+
+            <div class="single-content-container">
+                <?php
+                if (has_post_thumbnail()) {
+                    echo '<div class="col-md-12 animate__animated animate__bounceIn">';
+                    the_post_thumbnail('thumbnail');
+                    echo '</div>';
+                }
+                ?>
+                <div class="col-md-12 single-text">
+                    <?php the_content(); ?>
+                </div>
+
             </div>
             <div class="separation col-md-12"></div>
             <div class="col-md-6 details">
@@ -43,15 +43,11 @@ $details = get_field('details_tarifs');
             </div>
             <div class="col-md-6">
                 <div class="card mx-auto" style="width: 34rem;height:300px">
-                    <div class="card-body" style="margin-top: 80px;">
-                        <div class="card-title">
-                            <span >Prendre rendez-vous</span>
-                        </div>
-                        <div class="therapie-link" style="margin-top: 40px;">
-                            <a style="float:left" href="https://mathieucorman.fr/contact">
-                                <h4>Contactez-nous</h4>
-                            </a>
-                        </div>
+                    <div class="card-body">
+                        <h2 class="card-title" style="margin-bottom: 60px;">Prendre rendez-vous</h2>
+                        <a class="therapie-link" href="https://mathieucorman.fr/contact">
+                            <h4>Contactez-nous</h4>
+                        </a>
                     </div>
                 </div>
             </div>

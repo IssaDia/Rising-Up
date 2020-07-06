@@ -50,7 +50,7 @@ $logo = $image[0];
         </div>
     </div>
     <div class="col-md-12 sub-footer">
-        <p class="footer-company-name">Rising Up © 2020 - <a href="http://localhost/mattproject/mentions-legales">Mentions Légales</a></p>
+        <p class="footer-company-name">Rising Up © 2020 - <a href="https://mathieucorman.fr/mentions-legales">Mentions Légales</a></p>
     </div>
 
 </footer>

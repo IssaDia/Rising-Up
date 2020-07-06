@@ -84,6 +84,7 @@ nav ul li.active {
     background: linear-gradient(to right, #5FB4E4, #2488C2);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border: none !important;
+    margin-top: 8px !important;
 }
 
 .dropdown-item:hover {
@@ -193,7 +194,7 @@ nav ul li.active {
     margin-bottom: 40px;
 }
 
-.therapie-texte p {
+.card-text {
     color: #ffffff;
     font-size: 1.2em;
     margin: 40px 10px;
@@ -893,7 +894,7 @@ a {
     }
 
     .card {
-        width: 30rem !important;
+        width: 28rem !important;
         
 
     }
@@ -901,6 +902,10 @@ a {
     .wpcf7 label {
 
         width: 250px;
+    }
+
+    .card-text {
+        height: 100% !important;
     }
 
     .card-title h2,
@@ -955,7 +960,7 @@ a {
 
     /* Card title Therapy */
 
-    .card-title h2,
+    .card-title,
     .card-title span {
         font-size: 1em !important;
         font-weight: bold !important;
@@ -1077,7 +1082,13 @@ a {
 
     .wpcf7 label {
 
-        width: 250px;
+        width: 200px;
+    }
+
+    .card-text {
+        height: 100% !important;
+        font-size: 1em;
+    
     }
 
 

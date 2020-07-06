@@ -1,4 +1,4 @@
-<div class="jumbotron-box col-md-12  animate__animated animate__backInRight">
+<div class="jumbotron-box col-md-12  animate__animated animate__bounceInDown">
     <div class="jumbotron-line"></div>
     <div class="jumbotron-content">
         <small class="jumbotron-brand">RISING UP</small>

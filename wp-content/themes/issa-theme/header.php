@@ -45,7 +45,7 @@
         'theme_location'    => 'primary',
         'depth'             => 0,
         'container'         => 'div',
-        'container_class'   => 'collapse navbar-collapse',
+        'container_class'   => 'collapse navbar-collapse animate__animated animate__backInRight',
         'container_id'      => 'bs4navbar',
         'menu_class'        => 'navbar-nav ml-auto',
         'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
