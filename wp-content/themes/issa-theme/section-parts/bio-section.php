@@ -10,12 +10,7 @@ $content = apply_filters('the_content', $content);
 $content = str_replace(']]>', ']]&gt;', $content);
 ?>
 
-
-
 <div class="col-md-7 bio-text">
-<div class="col-md-12 bio-title">
-<span>Mathieu Corman</span>
-</div>
     <?php if (have_rows('bio_content')) :
         while (have_rows('bio_content')) : the_row();
             $bio = get_field('bio_content'); ?>

@@ -156,3 +156,7 @@ function citations_custom_type()
 }
 
 add_action('init', 'citations_custom_type');
+
+//Delete image compression
+
+add_filter( 'jpeg_quality', create_function( '', 'return 100;' ) );

@@ -1,5 +1,5 @@
 <div class="col-md-6">
-    <div class="card mx-auto" style="width: 44rem;height:600px">
+    <div class="card mx-auto" style="width: 44rem;height:850px">
         <div class="card-body">
             <div class="card-title">
                 <h5>Nous contacter</h5>
@@ -9,7 +9,7 @@
     </div>
 </div>
 <div class="col-md-6">
-    <div class="card mx-auto" style="width: 44rem;height:600px">
+    <div class="card mx-auto" style="width: 44rem;height:850px">
         <div class="card-body">
             <div class="card-title">
                 <h5>Nous retrouver</h5>
@@ -19,6 +19,7 @@
             </div>
             <div style="text-align: center;">
                 <p><span>Résidence Duc d'Havre Centre De Gaulle, 59200 TOURCOING </span></p>
+                <p><span>Tél: 06 13 35 00 67 </span></p>
             </div>
         </div>
 

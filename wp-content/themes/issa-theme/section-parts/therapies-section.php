@@ -14,19 +14,13 @@ $services = new WP_Query($args);
 
 <?php if ($services->have_posts()) : while ($services->have_posts()) : $services->the_post(); ?>
         <div class="col-md-6  mx-auto">
-            <div class="card mx-auto animate__animated animate__backInLeft" style="width: 34rem;height:450px">
-                <div class="card-body">
-                    <div class="card-title">
-                        <h2><?php the_title(); ?></h2>
-                    </div>
-                    <div class="therapie-texte">
-                        <p><?php echo get_field('slogan_texte'); ?></p>
-                    </div>
-                    <div class="therapie-link">
-                        <a href="<?php the_permalink(); ?>">
-                            <h4>Découvrir</h4>
-                        </a>
-                    </div>
+            <div class="card mx-auto animate__animated animate__backInLeft" style="width: 34rem;">
+                <div class="card-body" >
+                    <h2 class="card-title"><?php the_title(); ?></h2>
+                    <p class="card-text therapie-texte" style="height:150px;margin-top: 40px;"><?php echo get_field('slogan_texte'); ?></p>
+                    <a class="card-link therapie-link" href="<?php the_permalink(); ?>">
+                        <h4>Découvrir</h4>
+                    </a>
                 </div>
             </div>
         </div>

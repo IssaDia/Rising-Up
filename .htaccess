@@ -150,6 +150,8 @@
 # BEGIN W3TC Page Cache core
 <IfModule mod_rewrite.c>
     RewriteEngine On
+    RewriteCond %{SERVER_PORT} 80
+    RewriteRule ^(.*)$ https://www.mathieucorman.fr/$1 [R,L]
     RewriteBase /mattproject
     RewriteCond %{HTTPS} =on
     RewriteRule .* - [E=W3TC_SSL:_ssl]
@@ -174,6 +176,8 @@
 # Toute modification des directives entre ces marqueurs sera outrepassée.
 <IfModule mod_rewrite.c>
 RewriteEngine On
+RewriteRule ^(.*)$ https://www.mathieucorman.fr/$1 [R,L]
+
 RewriteBase /mattproject/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f

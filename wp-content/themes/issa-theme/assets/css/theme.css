@@ -73,11 +73,17 @@ nav ul li.active {
 
 .instagram-menu,
 .facebook-menu {
-    padding-top: 25px;
+    padding-top: 5px;
 }
 
 .dropdown-menu {
-    background-color: #2488C2 !important;
+    background: #2488C2;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5FB4E4, #2488C2);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5FB4E4, #2488C2);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none !important;
 }
 
 .dropdown-item:hover {
@@ -152,6 +158,7 @@ nav ul li.active {
 .card-body {
     padding: 10px !important;
     margin: 40px 30px;
+    color: #ffffff;
 }
 
 .card:first-of-type {
@@ -182,7 +189,8 @@ nav ul li.active {
 }
 
 .card .embed-responsive {
-    margin-bottom: 20px;
+    height: 80%;
+    margin-bottom: 40px;
 }
 
 .therapie-texte p {
@@ -192,29 +200,31 @@ nav ul li.active {
 
 }
 
+.therapie-link {
+    display: flex;
+    justify-content: center;
+    text-decoration: none !important;
+    text-align: center;
+}
+
 .therapie-link h4 {
     border: 3px solid #fff;
     width: 200px !important;
-
     font-size: 1em;
     padding: 12px 16px 10px;
     color: #ffffff;
-    text-align: center;
-
 
 }
 
-.therapie-link a {
-    text-decoration: none !important;
-    display: block;
-    float: right;
-
-}
 
 .therapie-link h4:hover {
 
     border: 3px solid #e1e1e1;
     color: #e1e1e1;
+}
+
+.card-title {
+    text-align: center;
 }
 
 .card-title h2,
@@ -225,6 +235,7 @@ nav ul li.active {
     text-transform: uppercase;
     color: #ffffff;
     font-weight: bold;
+
 }
 
 .card-title h5 {
@@ -233,7 +244,7 @@ nav ul li.active {
     text-transform: uppercase;
     color: #ffffff;
     font-weight: bold;
-    text-align: center;
+
 }
 
 /* Aout Me */
@@ -242,7 +253,7 @@ nav ul li.active {
     padding: 0 80px !important;
 }
 
-.bio-text h2 {
+.bio-text h3 {
     margin-top: 40px !important;
     font-size: 1em !important;
     font-weight: bold;
@@ -257,6 +268,7 @@ nav ul li.active {
 
 .bio-text li {
     list-style: square !important;
+    margin-bottom: 7px;
 }
 
 .bio-text ul {
@@ -264,22 +276,31 @@ nav ul li.active {
 }
 
 
-.bio-text span {
+.bio-text h2 {
     font-size: 3em;
     font-weight: bold;
 
 }
 
+.bio-text a {
+    color: #000000 !important;
+    text-decoration: none;
+
+}
+
 .aboutme-pic-container {
-   display: flex;
-   align-items: center;
-   justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 120px;
 }
 
 .aboutme-pic {
     border-radius: 50%;
-    padding: 10px;
+    padding: 5px;
     box-shadow: 0 0 50px #999999;
+    height: 90%;
+    width: 90%;
 }
 
 /* FAQ */
@@ -361,18 +382,14 @@ nav ul li.active {
     font-size: 2em;
     margin-bottom: 30px;
 }
-.wpcf7  {
-    padding: 40px;
-}
+
+
 .wpcf7 label {
-    font-size: 1.2em;
+    font-size: 1em;
     color: #ffffff;
+    width: 500px;
 }
 
-.card .wpcf7-form>p>label>span>input,
-textarea {
-    border-bottom: 1px solid #ffffff !important;
-}
 
 .wpcf7 select {
     font-size: 0.8em;
@@ -381,9 +398,19 @@ textarea {
     margin-top: 15px;
 }
 
+
+.wpcf7-list-item-label {
+    font-size: 0.7em !important;
+}
+
+[type="checkbox"]:checked+span:not(.lever):before {
+    border-right: 2px solid #000000 !important;
+    border-bottom: 2px solid #000000 !important;
+}
+
 .wpcf7-submit {
     color: #ffffff !important;
-    background-color: #5FB4E4 !important;
+    background-color: #2488C2 !important;
 }
 
 .wpcf7-submit:hover {
@@ -800,8 +827,12 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    border-radius: 50%;
     box-shadow: 1px 0px 10px -5px rgba(0, 0, 0, 0.75);
     margin-bottom: 60px;
+    width: 180px;
+    height: 180px;
+
 }
 
 /* 404 Page */
@@ -853,6 +884,33 @@ a {
 /* Media Queries */
 
 
+@media screen and (max-width:1096px) {
+
+    .aboutme-pic {
+
+        height: 90%;
+        width: 90%;
+    }
+
+    .card {
+        width: 30rem !important;
+        
+
+    }
+
+    .wpcf7 label {
+
+        width: 250px;
+    }
+
+    .card-title h2,
+    .card-title span {
+        font-size: 1.2em !important;
+        font-weight: bold !important;
+    }
+
+}
+
 @media screen and (max-width:640px) {
 
     /* Navbar Menu  */
@@ -892,13 +950,14 @@ a {
     .card {
         width: 100% !important;
         height: 100% !important;
+        margin-bottom: 40px;
     }
 
     /* Card title Therapy */
 
     .card-title h2,
     .card-title span {
-        font-size: 0.6em !important;
+        font-size: 1em !important;
         font-weight: bold !important;
     }
 
@@ -919,11 +978,17 @@ a {
 
     .aboutme-pic-container {
         margin-top: 40px;
+        padding-top: 0;
     }
 
     .bio-text {
         padding: 15px !important;
     }
+
+    .bio-text h2 {
+        font-size: 2em !important;
+    }
+
 
     .bio-text span {
         font-size: 2em;
@@ -984,10 +1049,7 @@ a {
         text-align: center;
     }
 
-    .detail-duree,
-    .detail-tarif {
-        width: 200px !important;
-    }
+
 
     .detail-duree h4,
     .detail-tarif h4 {
@@ -1007,4 +1069,16 @@ a {
         width: 200px;
         height: 200px;
     }
+
+    .check::before {
+        display: none;
+
+    }
+
+    .wpcf7 label {
+
+        width: 250px;
+    }
+
+
 }

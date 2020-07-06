@@ -12,7 +12,7 @@ $details = get_field('details_tarifs');
     <?php while (have_posts()) : the_post(); ?>
         <div class="row">
             <div class="col-md-12 single-title-container">
-                <h3 class="single-title  animate__animated animate__backInRight"><?php the_title(); ?></h3>
+                <h2 class="single-title  animate__animated animate__backInRight"><?php the_title(); ?></h2>
 
             </div>
             
@@ -48,7 +48,7 @@ $details = get_field('details_tarifs');
                             <span >Prendre rendez-vous</span>
                         </div>
                         <div class="therapie-link" style="margin-top: 40px;">
-                            <a style="float:left" href="http://localhost/mattproject/contact">
+                            <a style="float:left" href="https://mathieucorman.fr/contact">
                                 <h4>Contactez-nous</h4>
                             </a>
                         </div>
