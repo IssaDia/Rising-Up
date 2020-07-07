@@ -71,7 +71,7 @@ function services_custom_type()
                 'page-attributes'
             ),
 
-            'rewrite'            => array('slug' => 'services', 'with_front' => false),
+            'rewrite'            => array('slug' => 'therapies', 'with_front' => false),
             'has_archive'        => true,
             'public'             => true,
             'publicly_queryable' => true,
@@ -158,5 +158,10 @@ function citations_custom_type()
 add_action('init', 'citations_custom_type');
 
 //Delete image compression
-
 add_filter( 'jpeg_quality', create_function( '', 'return 100;' ) );
+
+//Delete error message from Contact form
+function my_custom_admin_head_css() {
+    echo '<style>ul.config-error {display:none !important;}[data-confiq-field][aria-invalid="true"]{border-color:grey;}</style>';
+}
+add_action( 'admin_head', 'my_custom_admin_head_css' );

@@ -21,9 +21,12 @@ $mobile_phone =  get_field('contact')['telephone'];
                         <div class='contact-adress-text  animate__animated animate__backInUp'><?php echo $adress ?></div>
                     </div>
                 </div>
+                
                 <div class="col-md-12 single-title-container">
                     <h3 class="single-title"><?php the_title(); ?></h3>
                 </div>
+                <div class="separation col-md-12"><p> Mathieu corman ostéopathe nutrition thérapie naturelle Lille Roubaix Tourcoing counterstrain fascia fasciathérapie fasciathérapeute</p></div>
+
             </div>
             <div class="row contact-items-container">
                 <div class="col-md-6 contact-tel-container"></div>

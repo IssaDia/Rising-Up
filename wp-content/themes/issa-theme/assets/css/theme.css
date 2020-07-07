@@ -31,6 +31,18 @@ body {
     margin-bottom: 60px;
 }
 
+.separation p {
+    font-size: 1em;
+    text-indent: -9999px;
+    /* sends the text off-screen */
+    color: #ffffff;
+    /* shows image */
+    height: 10px;
+    /* be sure to set height & width */
+    width: 60px;
+    white-space: nowrap;
+}
+
 /* NAVBAR */
 
 .navbar {
@@ -56,6 +68,15 @@ nav ul li.active {
     color: #ffffff !important;
     margin-right: 20px;
 }
+
+.therapie-nav-link {
+    padding-top: 2px;
+}
+
+.nav-link.active {
+    padding-top: 6px !important;
+}
+
 
 .home-link a:before {
     content: "\f102";
@@ -196,7 +217,7 @@ nav ul li.active {
 
 .card-text {
     color: #ffffff;
-    font-size: 1.2em;
+    font-size: 0.8em;
     margin: 40px 10px;
 
 }
@@ -228,9 +249,9 @@ nav ul li.active {
     text-align: center;
 }
 
-.card-title h2,
+.card-title,
 .card-title span {
-    font-size: 1.2em !important;
+    font-size: 2em !important;
     line-height: 1.1em;
     font-weight: lighter !important;
     text-transform: uppercase;
@@ -610,7 +631,7 @@ a {
 }
 
 .contact-items-container>div {
-    height: 600px;
+    height: 800px;
 }
 
 .contact-tel-container:first-of-type {
@@ -656,7 +677,7 @@ a {
 }
 
 .contact-tel-container p {
-    font-size: 1.4em;
+    font-size: 1.2em;
     text-transform: uppercase;
 }
 
@@ -796,13 +817,18 @@ a {
     list-style: disc outside;
 }
 
+.danger,
+.check {
+    list-style: none !important;
+}
+
 .danger::before {
     content: "\2794";
     /* FontAwesome Unicode */
     color: red;
     font-family: FontAwesome;
     display: inline-block;
-    margin-right: 0.1em;
+    margin-right: 0.5em;
     font-size: 20px;
     animation: blinker 2s linear infinite;
 }
@@ -813,7 +839,7 @@ a {
     color: rgb(78, 214, 78);
     font-family: FontAwesome;
     display: inline-block;
-    margin-right: 0.1em;
+    margin-right: 0.5em;
     font-size: 20px;
 
 }
@@ -895,7 +921,7 @@ a {
 
     .card {
         width: 28rem !important;
-        
+
 
     }
 
@@ -1033,11 +1059,12 @@ a {
     }
 
     .contact-items-container>div {
-        height: 90% !important;
+        height: 100% !important;
     }
 
     .single-text iframe {
-        width: 80%;
+        width: 100%;
+        padding: 10px;
     }
 
     .details {
@@ -1070,6 +1097,10 @@ a {
         font-size: 2em;
     }
 
+    .single-text {
+        text-align: left;
+    }
+
     .single-content-container img {
         width: 200px;
         height: 200px;
@@ -1082,13 +1113,13 @@ a {
 
     .wpcf7 label {
 
-        width: 200px;
+        width: 220px;
     }
 
     .card-text {
         height: 100% !important;
-        font-size: 1em;
-    
+        font-size: 0.7em;
+
     }
 
 

@@ -29,7 +29,7 @@ $details = get_field('details_tarifs');
                 </div>
 
             </div>
-            <div class="separation col-md-12"></div>
+            <div class="separation col-md-12"><p> Mathieu corman ostéopathe nutrition thérapie naturelle Lille Roubaix Tourcoing counterstrain fascia fasciathérapie fasciathérapeute</p></div>
             <div class="col-md-6 details">
                 <h3><?php echo $details['title']; ?></h3>
                 <div class='detail-duree'>

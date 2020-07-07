@@ -17,7 +17,7 @@ $services = new WP_Query($args);
             <div class="card mx-auto animate__animated animate__backInLeft" style="width: 34rem;">
                 <div class="card-body" >
                     <h2 class="card-title"><?php the_title(); ?></h2>
-                    <p class="card-text therapie-texte" style="height:150px;margin-top: 40px;"><?php echo get_field('slogan_texte'); ?></p>
+                    <p class="card-text therapie-texte" style="height:70px"><?php echo get_field('slogan_texte'); ?></p>
                     <a class="card-link therapie-link" href="<?php the_permalink(); ?>">
                         <h4>Découvrir</h4>
                     </a>
